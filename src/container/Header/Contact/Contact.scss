@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/bootstrap";
+
+.header__contact {
+    width: 100%;
+    background-color: #1435c3;
+    padding: 1.2rem 4rem;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-right: 2rem;
+
+            span {
+                font-size: 1.2rem;
+                color: #64b5f6;
+            }
+
+            i {
+                font-size: 1.6rem;
+                margin-right: 0.6rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import "../../../assets/variable/variable";
+
+.main__banner__product-item-adsHorizon {
+    width: 300px;
+    height: fit-content;
+    text-align: center;
+    border-radius: 10px;
+
+    .product-item-adsHorizon-wrapimg {
+        height: 160px;
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+            object-fit: cover;
+            border-radius: 10px;
+
+            &:hover {
+                transition: all 0.8s;
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        margin-top: 8px;
+        color: $text-main-color-2;
+    }
+
+    span {
+        font-size: 1.4rem;
+        color: $text-main-color;
+    }
+}

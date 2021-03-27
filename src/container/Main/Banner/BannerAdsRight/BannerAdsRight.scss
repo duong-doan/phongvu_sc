@@ -1,0 +1,14 @@
+.product__item-wrapAds {
+    width: 200px;
+    height: 556px;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .main__banner__product-item-ads:nth-child(1) {
+        margin-bottom: 20px;
+    }
+}

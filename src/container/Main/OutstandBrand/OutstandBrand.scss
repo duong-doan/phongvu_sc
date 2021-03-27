@@ -1,0 +1,37 @@
+@import "../../../assets/variable/variable";
+
+.main__outstand_brand {
+    width: 90%;
+    margin: 20px auto 0;
+    height: 300px;
+    border-radius: 10px;
+    background-color: $bg-color-primary;
+    padding: 16px;
+    position: relative;
+    margin-bottom: 20px;
+
+    h4 {
+        margin-bottom: 16px;
+        font-size: 2rem;
+
+        &::after {
+            content: "";
+            width: 3px;
+            height: 22px;
+            background-color: $bg-near-title;
+            position: absolute;
+            top: 6%;
+            left: 0;
+        }
+    }
+
+    .main__outstand_brand-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}

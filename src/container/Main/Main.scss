@@ -1,0 +1,60 @@
+@import "../../assets/variable/variable";
+
+.main {
+    width: 100%;
+    height: fit-content;
+    background-color: $bg-page-primary;
+
+    .main__wrap-bigCardWrap {
+        display: flex;
+        width: 90%;
+        margin: auto;
+
+        a {
+            margin-bottom: 16px;
+            background-color: white;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        a:nth-child(1) {
+            margin-right: 16px;
+        }
+    }
+
+    .main__bestSellProduct {
+        .besSellProduct-wrap-name {
+            a {
+                color: $text-main-color-2;
+                width: 8%;
+                background-color: transparent !important;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .main__wrap-productItemHorizontalBigger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+
+        a {
+            width: 32%;
+            background-color: transparent !important;
+            .main__banner__product-item-adsHorizon {
+                width: 100%;
+                .product-item-adsHorizon-wrapimg {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

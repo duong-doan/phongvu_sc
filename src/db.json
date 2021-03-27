@@ -1,0 +1,819 @@
+{
+    "laptops": [
+        {
+            "id": 0,
+            "name": "Laptop LG Gram 14ZD90N-V.AX55A5 (14' FHD/i5-1035G7/8GB/512GB SSD/Intel Iris Plus/Free DOS/1kg)",
+            "price": "25.990.000đ",
+            "discountPrice": "30.500.000đ",
+            "discount": "15%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/G7vI9TxoB9XeeUgsctYjLoc1icM4GGZzwpV-l-Iupze2EGDXbiGl0B-IhV0UFaO8oBlGfX3yOVoEq_GNEQ",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/G7vI9TxoB9XeeUgsctYjLoc1icM4GGZzwpV-l-Iupze2EGDXbiGl0B-IhV0UFaO8oBlGfX3yOVoEq_GNEQ=w1000-rw",
+                "https://lh3.googleusercontent.com/Ht8naOmiLkEe3d6ZvAhuvenxvm3HTjJSVivOCKwpMCJczWaUGm308vs8Ee_NJM0paxi48S7conYeEzpc8eE8=w1000-rw",
+                "https://lh3.googleusercontent.com/yN3jrLaUBC0iOF1s7-SjXF7ICKIH96g0WrATAgbXNNDselmoLQANWnUlMA3CMuj0kTyjm3gmTEpqYu-BP-0=w1000-rw",
+                "https://lh3.googleusercontent.com/3eDsR6liuw60yv0aZwrhARSYncehmu2OkZYdC5ZmYvtb1fOqdD1aL6GTGWgxXGn13bWZPEgzez6O871LDg4=w1000-rw",
+                "https://lh3.googleusercontent.com/9hwyutjcROiP8_s5Jdu8wrOEBG7q4s__1SfiQv6ivFu0eBUlxtIau6-2ldGJ0u_eFQAbLoxnNDiFlMbEnQ=w1000-rw",
+                "https://lh3.googleusercontent.com/3vrDUIzbA6pYnwX7geznYlYfp08_RPt37QsKpPv5y7K1aW94AxmNlks_HB3_B-YIHnB2_bu2OmsTxqngRUw=w1000-rw"
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Laptop LG Gram 14ZD90N-V.AX53A5 (14' FHD/i5-1035G7/8GB/256GB SSD/Intel Iris Plus/Free DOS/1kg)",
+            "price": "26.490.000đ",
+            "discountPrice": "29.379.000đ",
+            "discount": "10%",
+            "gift": [
+                "https://lh3.googleusercontent.com/8ID_TJiaE6lxjCUClu05nNjr-KBN0kjf2rs2sAkDuXn8WQofoEl2M8R6VjdGQ1YIW2qf_1sZwrCjQ-6hsA",
+                "https://lh3.googleusercontent.com/pABKMunuEataCnPuhBhogJzZ_wQ69kFSfT2U8tT4L5Xq2LUkgjGuuamKoSX0DVafkW3a3am0MpDCPqNOxQ"
+            ],
+            "image": "https://lh3.googleusercontent.com/pXEfl36FjjToe8PWNl1SA9nCw2AJKZKMr-86xdMxAGIvypqPf3U0XyEQIRbU-chvf401KCJWyhtb0cLV8uc",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/pXEfl36FjjToe8PWNl1SA9nCw2AJKZKMr-86xdMxAGIvypqPf3U0XyEQIRbU-chvf401KCJWyhtb0cLV8uc=w1000-rw",
+                "https://lh3.googleusercontent.com/jm3XHVs5BR7b4MAmBwcYxjhJtB1BqdNFa9y0ibNRp-xRRxVqQW3aW5phON3VFMzV10tNlwlzGulTslPbVw=w1000-rw",
+                "https://lh3.googleusercontent.com/ZvRnAMQm0V_8Cs7HNIFrs77OYqf1JMYZ564WA62kSiB_DDK7eTMXUpoPeuZcnrp8M7pJ1ndVWWY1tWjGLQiC=w1000-rw",
+                "https://lh3.googleusercontent.com/aFvQkRS_emHoSyVRJqyYSTTQn1zRzbePCGkMY6jEgqtAQyndkVzvf_4BnQDt6FyhAt942NWkrpoTPnE-5VuQ=w1000-rw",
+                "https://lh3.googleusercontent.com/JsSdRqZhgHsIT4pGz2Bud4xgUXbjqzJhzb4mtMfSf2J3e1RERodFw0EUNWl0MnA9Jm-eMqmor9wvidOA6w=w1000-rw",
+                "https://lh3.googleusercontent.com/Jolg5IBkhAYJ6zCIGrfu9h6k4SvbvgQxUkq_YEFwWF3-NspgOrj6eZXEBi2eCupYk1haOKnEAs51cMCoaKo=w1000-rw"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Laptop ACER Nitro 5 AN515-44-R9JM (NH.Q9MSV.003) ( 15.6' Full HD/ 144Hz/AMD Ryzen 5 4600H/8GB/512GB SSD/NVIDIA GeForce GTX 1650/Windows 10 Home 64-bit/2.2kg)",
+            "price": "19.990.000đ",
+            "discountPrice": "20.990.000đ",
+            "discount": "5%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/dPcaQErI30DEt5QBEwfYB9Hu2e4g4TsQTp1qfLWUjzr0_dJPWby2kCHIBJos8OiPAOyJO6Kvws1-Sgu6dPnb2HwPqh7_RpMauQ",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/dPcaQErI30DEt5QBEwfYB9Hu2e4g4TsQTp1qfLWUjzr0_dJPWby2kCHIBJos8OiPAOyJO6Kvws1-Sgu6dPnb2HwPqh7_RpMauQ=w1000-rw",
+                "https://lh3.googleusercontent.com/SmjIefcXiPFGDeTdv7__rWI41JtZ57w0zdl560SAKbRqAPoSG9LLYb_GewT8XJrvKNaBHWnFU0XioCyhGUx1pvu25eQh_q-Z=w1000-rw",
+                "https://lh3.googleusercontent.com/XCKFozl6zhbjXzmQQx_65miCaNDCG-Z2mKHAcnzZizeU0tonu267VQUQabDV-qGbkYZASOaoYdUg4ACdCTAeutxmcJzcjzACgg=w1000-rw",
+                "https://lh3.googleusercontent.com/CPDICNqJBycpucHv_C36rRm5bw7s-_nbvkScQouXVpvrYnlc860YPqTEaJwwkxZcX44Te6wP1W0VhrAWJ0CfM52olxgQip5IvQ=w1000-rw",
+                "https://lh3.googleusercontent.com/vx6k8v28OBkAudYk_bD9sG5zjaU9bQZEGHe7ywIyb_SIiE5ejy7qAKrMaMpVLETRJrrBfh0VzItRThtDe41YqzdWHHhlyx4=w1000-rw",
+                "https://lh3.googleusercontent.com/o12CcJjHQrUsYs5yhUg-EV_NhIRGPA613TQLZo6LtLaoB46PkS66veGrsZhSrUAYPE3ftEKjAbxYuwthjMWgGb0SLb3C3aU=w1000-rw"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Laptop ACER Nitro 5 AN515-55-72P6 (NH.QBNSV.004) ( 15.6' Full HD/ 144Hz/Intel Core i7-10750H/8GB/512GB SSD/NVIDIA GeForce GTX 1650/Windows 10 Home 64-bit/2.3kg)",
+            "price": "25.390.000đ",
+            "discountPrice": "25.990.000đ",
+            "discount": "2%",
+            "gift": [
+                "https://lh3.googleusercontent.com/pQw0whszQzQrmNSJqaeVXZ3nci31aebNiHTbVVsuxx6_ItdETz7J6A8F_xdMKmGJCqrJJsDdVmCrF33QuaTphnyEZV_N4ZY6Ng",
+                "https://lh3.googleusercontent.com/Iz12vfXqgTg5pi9bet4qclbtbwTB3TFIValC8W2pvmlGHnCZ937GjdJVnfARkopEtmAfJBNvDzpIC-wNPaggiyrmcdpcogD3"
+            ],
+            "image": "https://lh3.googleusercontent.com/dPcaQErI30DEt5QBEwfYB9Hu2e4g4TsQTp1qfLWUjzr0_dJPWby2kCHIBJos8OiPAOyJO6Kvws1-Sgu6dPnb2HwPqh7_RpMauQ",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/dPcaQErI30DEt5QBEwfYB9Hu2e4g4TsQTp1qfLWUjzr0_dJPWby2kCHIBJos8OiPAOyJO6Kvws1-Sgu6dPnb2HwPqh7_RpMauQ=w1000-rw",
+                "https://lh3.googleusercontent.com/SmjIefcXiPFGDeTdv7__rWI41JtZ57w0zdl560SAKbRqAPoSG9LLYb_GewT8XJrvKNaBHWnFU0XioCyhGUx1pvu25eQh_q-Z=w1000-rw",
+                "https://lh3.googleusercontent.com/XCKFozl6zhbjXzmQQx_65miCaNDCG-Z2mKHAcnzZizeU0tonu267VQUQabDV-qGbkYZASOaoYdUg4ACdCTAeutxmcJzcjzACgg=w1000-rw",
+                "https://lh3.googleusercontent.com/CPDICNqJBycpucHv_C36rRm5bw7s-_nbvkScQouXVpvrYnlc860YPqTEaJwwkxZcX44Te6wP1W0VhrAWJ0CfM52olxgQip5IvQ=w1000-rw",
+                "https://lh3.googleusercontent.com/vx6k8v28OBkAudYk_bD9sG5zjaU9bQZEGHe7ywIyb_SIiE5ejy7qAKrMaMpVLETRJrrBfh0VzItRThtDe41YqzdWHHhlyx4=w1000-rw",
+                "https://lh3.googleusercontent.com/o12CcJjHQrUsYs5yhUg-EV_NhIRGPA613TQLZo6LtLaoB46PkS66veGrsZhSrUAYPE3ftEKjAbxYuwthjMWgGb0SLb3C3aU=w1000-rw"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Laptop ASUS TUF Gaming FX506LH- HN002T ( 15.6' Full HD/Intel Core i5-10300H/8GB/512GB SSD/NVIDIA GeForce GTX 1650/Windows 10 Home 64-bit/2.3kg)",
+            "price": "19.990.000đ",
+            "discountPrice": "20.490.000đ",
+            "discount": "2%",
+            "gift": [
+                "https://lh3.googleusercontent.com/8ID_TJiaE6lxjCUClu05nNjr-KBN0kjf2rs2sAkDuXn8WQofoEl2M8R6VjdGQ1YIW2qf_1sZwrCjQ-6hsA"
+            ],
+            "image": "https://lh3.googleusercontent.com/Vphvm8fXrrb_aFhRfAJR3Q7Mfh3xgo6UW3DJlfL7brswucYmnZPVvD0dSEdJHulR-qJ8A7gANfrm_Kbgw3l3cJqTRqKSoZzJ",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/Vphvm8fXrrb_aFhRfAJR3Q7Mfh3xgo6UW3DJlfL7brswucYmnZPVvD0dSEdJHulR-qJ8A7gANfrm_Kbgw3l3cJqTRqKSoZzJ=w1000-rw",
+                "https://lh3.googleusercontent.com/MM3G143sInfw5hjhmUR7JK-_qQfG8sMG9_eZS-XIHyW2T7QpCHRK2W3zb2Q2WLaPvig3aR_cUQuLN6dSMjuog3UlYT47NnB6=w1000-rw",
+                "https://lh3.googleusercontent.com/Nnn7pSjXx6aZK7Pww6a3wheSaZ2pUTGCZwyL1_Wtwr82r1nCFFKm_9z-YtgXkNBT1ThVWxRQ8tKdx3QIQMJ025VB_eXwDLo=w1000-rw",
+                "https://lh3.googleusercontent.com/y7U4NVQvo9gLSkcnMfWUtuROJ6eMWlVukYYuajUyxsX7MJ-9GKwfqemwM4BZfT8-QGfsAQNSSgZGYS4kvcmNd_L4Y-Me9R0i=w1000-rw",
+                "https://lh3.googleusercontent.com/8Eae96_hsMs5MrA-C-VGAPOQXQ8i1P2mJVE2Ztb9qnNItp7BI-E3v4tNYT8i-4rygsFJmB10jQcNLyOMqVpGKYP4NpdDlYQU=w1000-rw",
+                "https://lh3.googleusercontent.com/gfUVFYhDF68jzw4ij2ZCpkE7NCQGAANxUkNQtjf93Wv-aTm_t7bPxngfOBmVUsotlePkPvubvN5ZnKgattlGoZhdsn1EMZPD=w1000-rw"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Laptop ASUS TUF Gaming FA506IU AL127T ( 15.6' Full HD/ 144Hz/AMD Ryzen 7 4800H/8GB/512GB SSD/NVIDIA GeForce GTX 1660Ti/Windows 10 Home SL 64-bit/2.3kg)",
+            "price": "25.390.000đ",
+            "discountPrice": "26.990.000đ",
+            "discount": "6%",
+            "gift": [
+                "https://lh3.googleusercontent.com/Iz12vfXqgTg5pi9bet4qclbtbwTB3TFIValC8W2pvmlGHnCZ937GjdJVnfARkopEtmAfJBNvDzpIC-wNPaggiyrmcdpcogD3"
+            ],
+            "image": "https://lh3.googleusercontent.com/luTZtvbZUeQvaqUo7s-racBmMuwJus2FYcbbQ06m39pzc31jmCiBFqiBCWdBn3RogHRiGhXKRDQk8uINWg",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/luTZtvbZUeQvaqUo7s-racBmMuwJus2FYcbbQ06m39pzc31jmCiBFqiBCWdBn3RogHRiGhXKRDQk8uINWg=w1000-rw",
+                "https://lh3.googleusercontent.com/WTzbXi44211_Q2pprWfC3r0ClVhXv2nI4loEhFSwzzmxS-oz9u4xjHcu7OVJLxn0kkfgAWflKBZG5Bjxs78=w1000-rw",
+                "https://lh3.googleusercontent.com/O10q4TpwGSise080RpxxYVS-qrpnQak0sn1Se4eR1sUBChAie_g5sTidPuOlBGxl-oR_1ApJuFat-YYWxivs=w1000-rw",
+                "https://lh3.googleusercontent.com/w6C-WoiZLWnr-U1IykqmCOgF4W13tAvUFegP8t-X3lxzkwU2VqTU78FCx8fGnCtTRnn84rQLVvdGnxbQvg=w1000-rw",
+                "https://lh3.googleusercontent.com/3q7IIsLfSxPt1WiMpRnaiHGatKSmcwo7itJPhTCwUROeqOlXeIRdFwSSMzWf4vq5Dbx4cvelqlISvLZs=w1000-rw",
+                "https://lh3.googleusercontent.com/EVSEU9kX6S22Ne8Spuk3sBccp9sq1rddsqwVKbNuh291qXsJePkLkoH677HngsKhveyPN1FS70AS4FfDr_U=w1000-rw"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Laptop ASUS Zenbook UX425EA BM113T ( 14' Full HD/Intel Core i7-1165G7/16GB/512GB SSD/Windows 10 Home 64-bit/1.2kg)",
+            "price": "27.790.000đ",
+            "discountPrice": "28.990.000đ",
+            "discount": "4%",
+            "gift": [
+                "https://lh3.googleusercontent.com/8ID_TJiaE6lxjCUClu05nNjr-KBN0kjf2rs2sAkDuXn8WQofoEl2M8R6VjdGQ1YIW2qf_1sZwrCjQ-6hsA",
+                "https://lh3.googleusercontent.com/pABKMunuEataCnPuhBhogJzZ_wQ69kFSfT2U8tT4L5Xq2LUkgjGuuamKoSX0DVafkW3a3am0MpDCPqNOxQ"
+            ],
+            "image": "https://lh3.googleusercontent.com/cvRzbOMIHA212yLg2dmaXrznV9-KxplrkRmYEAMC0m3E5EiIAtE3q4CFzRsxFhFlb8f1CzAgDfQdBHzTDlyvb17fVT3idsci",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/cvRzbOMIHA212yLg2dmaXrznV9-KxplrkRmYEAMC0m3E5EiIAtE3q4CFzRsxFhFlb8f1CzAgDfQdBHzTDlyvb17fVT3idsci=w1000-rw",
+                "https://lh3.googleusercontent.com/DlbiMxzgNF3o6K3IWhJIlQhX_2R5KhPgKfN7NvlBxOT-btA45CU2s_tk2dKVtguW_gYT6qgJsz4XAXS_-htVSDCGhcA7QCXC=w1000-rw",
+                "https://lh3.googleusercontent.com/JS_5cVX_TPY-mw1iOBzrrV9DYmC98tg9FRhPcX3BhULRVAnyFzTuc4QRMSXFHYItw063ZMLKqGXE9VHob4b1c71twAkCuNE=w1000-rw",
+                "https://lh3.googleusercontent.com/v7clSOj7ysQF3_B9_w8LoYVkPg073zxrmOl51MwtkhXb6db8awb6s0VqVXSWLaffb6lGlN63j-dW_Soxbfk0SmL8NCbx0MjS=w1000-rw",
+                "https://lh3.googleusercontent.com/OAlUKQXbf0Kpj--LGBxYZiGgX84C6SjJ02linBebC8D5cisURT4ELGdKGViUpzehN-gPGo2vAa8mGrHbREmGp5zcaefVFwrkXg=w1000-rw",
+                "https://lh3.googleusercontent.com/DwEh3Or6mjozVU1kL35GdxJFUBnXHec2mM1MgnIIUwFE6hpney6NEZ8LqDhA4ve7w85YHBxGKMk6h2A91V_L9mvKfhMhFoU0=w1000-rw"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Laptop ASUS Vivobook S433EA- AM440T ( 14' Full HD/Intel Core i5-1135G7/8GB/512GB SSD/Windows 10 Home 64-bit/1.4kg)",
+            "price": "18.490.000đ",
+            "discountPrice": "18.990.000đ",
+            "discount": "3%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/UjC-bwSqEzAjoI0iE9mSLx_hyzhU0RtzHwMXYLMQzbvUbB0e8jW489xNByQeFZpqpX7MN8_9n6w7GH6KTZ8biIFDtiPfkkyL",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/UjC-bwSqEzAjoI0iE9mSLx_hyzhU0RtzHwMXYLMQzbvUbB0e8jW489xNByQeFZpqpX7MN8_9n6w7GH6KTZ8biIFDtiPfkkyL=w1000-rw",
+                "https://lh3.googleusercontent.com/PeoW7QWL-p84lNob1h7IMLCE_29y4lA2pbwp-9mZ82n62jYx97BlqA7iM0h2DMfQjWOkRBy0L4UdrY6CnrPtPTVa1Jlt4l1C=w1000-rw",
+                "https://lh3.googleusercontent.com/xaDAGX0ndNYAleRYnGsADd9YdQxp1EanKEnKvt7mtml-9-tCiX_ot5nSkK2YsjcmKr8RAiC_aQc5Qpv5nGJPLbPm4O_wTb4=w1000-rw",
+                "https://lh3.googleusercontent.com/Di5UcxQy2i6k3zyODBwy4JuqIqDjk2nLMy0JRwLwTk8lOHC8BD4Ngr8hCvz9eIv9Iood4wU3tnRJksdoXcdPjD8cbR6MjrA=w1000-rw",
+                "https://lh3.googleusercontent.com/6fv1khIklfbUnugHiOISf1ocKGSAu3G0CpiCfQ_kvBGB5OXKpB33LNFyklJY5aSViPGGP_qo0ACxu5LT0jKhhtdPFa5Zpktfhg=w1000-rw",
+                "https://lh3.googleusercontent.com/fsy67uBCNynz6gGlVKTxdK10fkEsLW19tT4KF8mNfyxeZORISEkKj8Da15tv3FcolzuspRWOUR0YZWMy2U-CT1VIMVIotmk1IQ=w1000-rw"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Laptop ASUS Vivobook X415MA- BV087T ( 14' HD/Intel Celeron N4020/4GB/256GB SSD/Windows 10 Home 64-bit/1.5kg)",
+            "price": "6.890.000đ",
+            "discountPrice": false,
+            "discount": false,
+            "gift": [
+                "https://lh3.googleusercontent.com/8ID_TJiaE6lxjCUClu05nNjr-KBN0kjf2rs2sAkDuXn8WQofoEl2M8R6VjdGQ1YIW2qf_1sZwrCjQ-6hsA",
+                "https://lh3.googleusercontent.com/pABKMunuEataCnPuhBhogJzZ_wQ69kFSfT2U8tT4L5Xq2LUkgjGuuamKoSX0DVafkW3a3am0MpDCPqNOxQ"
+            ],
+            "image": "https://lh3.googleusercontent.com/t_Zlgj0VCcYYxkKDfnh7n9uZCI32ma-2oQqHiWQFAOEBZuO41KxydlWIgFwJZpqSXbfpqFRa8txAVMnP9ImDNxWq-h5qFqj43A",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/t_Zlgj0VCcYYxkKDfnh7n9uZCI32ma-2oQqHiWQFAOEBZuO41KxydlWIgFwJZpqSXbfpqFRa8txAVMnP9ImDNxWq-h5qFqj43A=w1000-rw",
+                "https://lh3.googleusercontent.com/PdCA9n61aFO4yAIuhvj-kKndFK952ztTO8lmuhQ8mXESoz7JVVJhW1MjhS8K_27MpRI9v1oGx0CFv4QOwmOJxkVBnFdso_ON=w1000-rw",
+                "https://lh3.googleusercontent.com/t_oDwf9JE16sDG0_8ZdxpbtnMmG8POthalM12fbC0bHLwlMvcxNDt_Vv7Bj5pR0f7OigLa9wJVazqp8wlOofyS6Pq22euBfI=w1000-rw",
+                "https://lh3.googleusercontent.com/3YXv0NsplpgA5FkIo3ppHbeVg0A3-hjEaLQXxskZK739LZdL5rm9I5Rm_vtwQZV87G-d8ezU5dVERzYKOEpdb02YphGuxWvE=w1000-rw",
+                "https://lh3.googleusercontent.com/86iDozDhcYB-ZuRzzYnXPRAvlDweDU0OnU3D0TNmKYZKMOLCeqIe0euZxjGawrliMml__hCPh8W3lnVpEbF1QgiN5XtPJLfR=w1000-rw",
+                "https://lh3.googleusercontent.com/o6q_2LkYgJmKVEVJN-W7LvvSnsoglfs9cWzLOYV74OyK2qBXaQauRj9umdsP8-E2pzcAErthFrjzbtVHS4nWfsQURxXMbS5d=w1000-rw"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Laptop ACER Acer Aspire 3 A315-57G-31YD NX.HZRSV.008 ( 15.6' Full HD/Intel Core i3-1005G1/4GB/256GB SSD/NVIDIA GeForce MX330/Windows 10 Home 64-bit/1.9kg)",
+            "price": "11.690.000đ",
+            "discountPrice": "11.999.000đ",
+            "discount": "3%",
+            "gift": [
+                "https://lh3.googleusercontent.com/8ID_TJiaE6lxjCUClu05nNjr-KBN0kjf2rs2sAkDuXn8WQofoEl2M8R6VjdGQ1YIW2qf_1sZwrCjQ-6hsA",
+                "https://lh3.googleusercontent.com/pABKMunuEataCnPuhBhogJzZ_wQ69kFSfT2U8tT4L5Xq2LUkgjGuuamKoSX0DVafkW3a3am0MpDCPqNOxQ"
+            ],
+            "image": "https://lh3.googleusercontent.com/Xg65g5ACvDuYssAX3xUQgdDiHF-kbvwwEWb-h7hCNxcY1iC6gUeLWXwv0Shz1nHTF70cTg96N0T9o4YNOfEaQsU_1g4GSkU",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/Xg65g5ACvDuYssAX3xUQgdDiHF-kbvwwEWb-h7hCNxcY1iC6gUeLWXwv0Shz1nHTF70cTg96N0T9o4YNOfEaQsU_1g4GSkU=w1000-rw",
+                "https://lh3.googleusercontent.com/oQUxwYcKAazP9wW-9ATa7wSZMZz-JOjWJAMklndYIn-WSRIiwYD34KRcxx9HFqakH_AdgqRVJWd51WvhasEd8rPBwiQU41lQ=w1000-rw",
+                "https://lh3.googleusercontent.com/Ed384IwsuErzU6nx5s8N0MjOxbMUVISCWJoPvU0eqyO-tF0aeAESGU2FTJREZv1uGNPLS-DdyLSATSpRlCAS2tBN-ysZivOD=w1000-rw",
+                "https://lh3.googleusercontent.com/pINOVdMguTDTKC_RD9e2jPRhV7BM60UbyAGRcWv40_t1Y7cotBuCTmxydGFKAbtkhQ0c8xUAgQcqaZ-ruT0TafdfxuNT1sc=w1000-rw",
+                "https://lh3.googleusercontent.com/qwtn04oz8k2lASWJjuEFC-NEyOChn1z0Jj_lKPMsZQqcH3I_Kgz7s_ehyTP2-nz9-47jxJfHwXdsTq9okz188BxBRk_TzFgW=w1000-rw",
+                "https://lh3.googleusercontent.com/fKIpFtu8xzZtSmnI_PX3KJariKa0iX3WpPHyG0Z2hW_KCPZLdD6KLMncXjawvIYguVDAjnd1ycoF8jT_NUn3t-1HOYMBi8=w1000-rw"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Laptop Acer Swift 3 SF314-42-R5Z6 (NX.HSESV.001) (14' FHD/R5 4500U/8GB/512GB SSD/AMD Radeon/Win10/1.2kg)",
+            "price": "17.490.000đ",
+            "discountPrice": "18.190.000đ",
+            "discount": "4%",
+            "gift": [
+                "https://lh3.googleusercontent.com/8ID_TJiaE6lxjCUClu05nNjr-KBN0kjf2rs2sAkDuXn8WQofoEl2M8R6VjdGQ1YIW2qf_1sZwrCjQ-6hsA",
+                "https://lh3.googleusercontent.com/sRrkC0bNhsCfYVwOkHi0HfAyTQGDVKprknZ4MHSZlUmkF5nogbuFXsA46Lhm5eqLyMdqWMNdkbZhsMnHv4s"
+            ],
+            "image": "https://lh3.googleusercontent.com/NOkugoe9f49NATmfEgf5IGRu_upu0WBgetq9JQyWNJFxRB8ogOzrhfR7pYE4kNNBOEZgoyh36Sx5Sy7p4cqk",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/NOkugoe9f49NATmfEgf5IGRu_upu0WBgetq9JQyWNJFxRB8ogOzrhfR7pYE4kNNBOEZgoyh36Sx5Sy7p4cqk=w1000-rw",
+                "https://lh3.googleusercontent.com/Tn7XuO7AesSpFjoR5gBsSZ2H2twrl5TGfcj5kG3Q0atICX5c9sHJ48Wd4qK45F9US1HwbMx6KiTjw6CK0Vw=w1000-rw",
+                "https://lh3.googleusercontent.com/M_4zKYs0BkKCeQ1_dAgDKq6w2m8dlv1dIufYQ5wbpKSlauKSYftSuNIx6AXAnsmrfNRTwYBvTHnWSpdVeA=w1000-rw",
+                "https://lh3.googleusercontent.com/KDOhjF5TkotgQ8E9xDx4Q4LwcLZmx9p5Z2-tIbXWH3puGPhhukBygYzw4o9AHAP3DS1lNHtrACfeMncQa5o=w1000-rw",
+                "https://lh3.googleusercontent.com/zxXnFJIHepDZh2N5AnYkzUcKr7y3j9Nm1n8ZxuzKRSTrdJvp6UPs9zeBpTVxOVt4pVKX9kUT3OiOy0BLTpU=w1000-rw",
+                "https://lh3.googleusercontent.com/Tz_fo7Yu3c9mYNFbWip9kcgD7GZy0IPOrpjeZqEmCOJ6jos9iQ7QYvNze_13BUr4J1Y5SmvAYQ3rnZaEVTgj=w1000-rw"
+            ]
+        }
+    ],
+    "accessories": [
+        {
+            "id": 0,
+            "name": "RAM desktop KINGSTON Fury Black (1 x 8GB) DDR4 2666MHz (HX426C16FB3/8)",
+            "price": "1.150.000",
+            "discountPrice": "1.230.000",
+            "discount": "7%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/jnrkDz0U2NXBAhSC--Ty3sN63B2YCVaxCK-WPgYUf_emw6PyeQZLRFgZ55fRSygzzSk0E6XK8DASb52ageM=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/jnrkDz0U2NXBAhSC--Ty3sN63B2YCVaxCK-WPgYUf_emw6PyeQZLRFgZ55fRSygzzSk0E6XK8DASb52ageM",
+                "https://lh3.googleusercontent.com/jnrkDz0U2NXBAhSC--Ty3sN63B2YCVaxCK-WPgYUf_emw6PyeQZLRFgZ55fRSygzzSk0E6XK8DASb52ageM"
+            ]
+        },
+        {
+            "id": 1,
+            "name": "CPU INTEL i3-10100 (4C/8T, 3.60 GHz - 4.30 GHz, 6MB) - 1200",
+            "price": "3.150.000",
+            "discountPrice": "3.390.000",
+            "discount": "7%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/M1mCTDGefGmDf9_mdG1ffV71HkzcfXJFRqRzF8K94ZVf7vyoNO0yoTBt0TA2zVDy1fn-VFo0d0pNHGA8l8c=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/M1mCTDGefGmDf9_mdG1ffV71HkzcfXJFRqRzF8K94ZVf7vyoNO0yoTBt0TA2zVDy1fn-VFo0d0pNHGA8l8c=w500-rw"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Chuột gaming Logitech G502 HERO (Đen)",
+            "price": "989.000",
+            "discountPrice": "1.799.000",
+            "discount": "45%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/Iz12vfXqgTg5pi9bet4qclbtbwTB3TFIValC8W2pvmlGHnCZ937GjdJVnfARkopEtmAfJBNvDzpIC-wNPaggiyrmcdpcogD3=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/Iz12vfXqgTg5pi9bet4qclbtbwTB3TFIValC8W2pvmlGHnCZ937GjdJVnfARkopEtmAfJBNvDzpIC-wNPaggiyrmcdpcogD3=w500-rw",
+                "https://lh3.googleusercontent.com/TYoMYsKOfz5XMILzQw5RCRrSBcYGwePDhijJ0YHZM3u4Sma_D5goAKquO8kcZu88nKBlSGLyKoj-uPInUHRQkVQDAeXCf7CA",
+                "https://lh3.googleusercontent.com/MTaZ8dnj_8Aa6KUIjYdf_Lp4NRvBlJRNQbsPaOm06AwrnCID-LamYUICO8a1yPdtpD2ov-oeb0Tbh0R2NeGsE0KXYGcOd8XG",
+                "https://lh3.googleusercontent.com/t0dalgVljy1Jazg-9XCJ4R7fQUG-a1Xwe1nwKXakI8DTYnYujvAjZF7uANxnZxj2PH63Bz5sKQ5Z5SZuSjyrF1jpJXlnQoBJ",
+                "https://lh3.googleusercontent.com/7v_sjYWWZOla2PBaavZ___eJ1_gsV7S3zH2GPnwQrcvd4ORV0J4RPuLt_MDgIj1PsKebA08i3FogRRMn1oWlZz_LUwdbjVo",
+                "https://lh3.googleusercontent.com/1ploGV85stw8p0yoZ4tGd_VJXz8I8IFCIJMdz7DowvpyQrgKFM7U45MMPsBj37kNTlHfPQcexr09_9vPjp4eS1GFye835uM"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "CPU INTEL Core i5-10400 (6C/12T, 2.90 GHz Up to 4.30 GHz, 12MB) - 1200",
+            "price": "4.990.000",
+            "discountPrice": "",
+            "discount": "",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/UwKfc2vSQGNYIHP23DfTWcToEmsIaxjQsdx0DtIEbqCeZ5dnGBPS7d7WCVW9TOiIkfAh2ddgwDvnOR5U_jg=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/UwKfc2vSQGNYIHP23DfTWcToEmsIaxjQsdx0DtIEbqCeZ5dnGBPS7d7WCVW9TOiIkfAh2ddgwDvnOR5U_jg=w500-rw"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Chuột máy tính DARE-U EM908",
+            "price": "279.000",
+            "discountPrice": "399.000",
+            "discount": "30%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/OG_LAurr9Wa7uo28dt2Njnsc7NZbwWmiO0eXYLWk-iyrPOGo64-nhdeoqYvFbf8fBSZr2bCnEfhVDP93P30",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/OG_LAurr9Wa7uo28dt2Njnsc7NZbwWmiO0eXYLWk-iyrPOGo64-nhdeoqYvFbf8fBSZr2bCnEfhVDP93P30",
+                "https://lh3.googleusercontent.com/0AOFKAm5yoAfIXGasQMNJ5IVCjnR0vUVUolU48IMNAXTtFjTh92V4J9fVg0SeHEVvbHFB2rluI-BTkuiYpn1"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Ổ cứng SSD Kingston A400 240GB M.2 2280 SATA 3 - SA400M8/240G",
+            "price": "1.030.000",
+            "discountPrice": "1.130.000",
+            "discount": "9%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/whYXnVvhtCEtvQgUfhsGroaK15HFLuX6ZeFHtWyUfA3A9leAY_1XfyiX8Fd41iY9O_TLupGQYrqcvgcMxGI=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/whYXnVvhtCEtvQgUfhsGroaK15HFLuX6ZeFHtWyUfA3A9leAY_1XfyiX8Fd41iY9O_TLupGQYrqcvgcMxGI=w500-rw",
+                "https://lh3.googleusercontent.com/ar1XflqbOubW19BpBPDI64bjO0zZMKXtlJd2h2Z3myEYZFBeWpgvo3OUlUeEtFcVz9DHv4HlfXH8eIVXFw"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Camera KBvision KX-Y2002S4ZA",
+            "price": "677.000",
+            "discountPrice": "930.000",
+            "discount": "27%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/ZfhH_SUm7C8T3iwnk_mldPwk2Fp-aka5V3EvyFUp2lBHzlFRTRuqPhT7_1vBen789DzUW56ucmFHNAa-ylc",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/ZfhH_SUm7C8T3iwnk_mldPwk2Fp-aka5V3EvyFUp2lBHzlFRTRuqPhT7_1vBen789DzUW56ucmFHNAa-ylc"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Thiết bị quan sát/ Camera Kbvision KX-C2004C4",
+            "price": "799.000",
+            "discountPrice": "1.022.000",
+            "discount": "22%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/6ELYb8Mo_EAJkiz7qSN-Qw3UCyEr3JvryPuiaUmPL7AHW7nucJ5Fn2cvq90IMhUgxwyHXpArwU6vMFV5iykr",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/6ELYb8Mo_EAJkiz7qSN-Qw3UCyEr3JvryPuiaUmPL7AHW7nucJ5Fn2cvq90IMhUgxwyHXpArwU6vMFV5iykr"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Ổ cứng SSD Western Digital WD Green 240GB M.2 2280 SATA 3 - WDS240G2G0B",
+            "price": "1.080.000",
+            "discountPrice": "1.130.000",
+            "discount": "4%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/Xs49wP3D1CpWwb8P3xLQjfbYO8HdF5jVEww_OvIqOiDKXh0Ap2g4PTPEl7LK3yNcAII0yomCbJkonjFZ-g=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/Xs49wP3D1CpWwb8P3xLQjfbYO8HdF5jVEww_OvIqOiDKXh0Ap2g4PTPEl7LK3yNcAII0yomCbJkonjFZ-g=w500-rw",
+                "https://lh3.googleusercontent.com/WWb4ZFdxtTbzRrYtSu1LTAo7xJUHDycjRFFQBgYl2Du8NRcNe0h_qbOLVos1_PftgkZKS6Qj8fGk6a8AizI"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Ổ cứng SSD Kingston A2000 250GB M.2 2280 NVMe PCIe (SA2000M8/250G)",
+            "price": "1.390.000",
+            "discountPrice": "1.490.000",
+            "discount": "7%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/1co8gYbGPNTiLWSPZILHuSA-TiowrOyExt0aUOmKa3dp5aCqYhlJ7ZvQuUv1m-w0BR6OWkUyXefQoXxk6A=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/1co8gYbGPNTiLWSPZILHuSA-TiowrOyExt0aUOmKa3dp5aCqYhlJ7ZvQuUv1m-w0BR6OWkUyXefQoXxk6A=w500-rw",
+                "https://lh3.googleusercontent.com/YpcBwDCG4j4m_WMKLJlb98yoIF_RLuXhThgi0LWLE3kj_0EBnFl_vA3d25_s6TOWl4P3ySqxnDU8TUSaoWs"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Mainboard GIGABYTE B460M GAMING HD",
+            "price": "1.910.000",
+            "discountPrice": "1.990.000",
+            "discount": "4%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/Usk1kIKrj1k9l-M0ikQkwEthsDAvXxWv_j20zjNdfrmuGbTUsLjvr1rxvlfnhkXNrwTK3r04R42HI-PeBhA=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/Usk1kIKrj1k9l-M0ikQkwEthsDAvXxWv_j20zjNdfrmuGbTUsLjvr1rxvlfnhkXNrwTK3r04R42HI-PeBhA=w500-rw",
+                "https://lh3.googleusercontent.com/gaJR__jAQVJpE9twrStd3MyeympcuMaoU1K-rBvfxmXmMJ7duFdo1Y7rRGmMmodc27VnqfcZwk8t3YsOgA",
+                "https://lh3.googleusercontent.com/R3EfDMzBdQuYJ-h_cX0VWsIxWMOQMuKwQ29i7XJ8Zk6ZE83-dxcnGdRMQcRI0UUYjygR3L_r3OHyiHjuJCo",
+                "https://lh3.googleusercontent.com/MjeGGFNuJq_ulCkK_pAsHn2tUst50gctxwDAMAo2RtY92D1lkai_GVjrriLOBZykMfpWp6lJkiHqHBdOMQeF"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Ổ cứng SSD WD Blue SN550 250GB M.2 2280 NVMe Gen3 x4 (WDS250G2B0C)",
+            "price": "1.250.000",
+            "discountPrice": "1.350.000",
+            "discount": "7%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/J7YE06Fd-3LNGsP4qht6ilNQzYbGzM4JqkhoJyvtNc9aAs589bUUZesj2pN5LYQ4DezdNr9eCqXmpHFWrltf4TlG94WT4Tck=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/J7YE06Fd-3LNGsP4qht6ilNQzYbGzM4JqkhoJyvtNc9aAs589bUUZesj2pN5LYQ4DezdNr9eCqXmpHFWrltf4TlG94WT4Tck=w500-rw",
+                "https://lh3.googleusercontent.com/6iFpKYHkjDDyGby-nn9yQrXZN8REnH2k6mWlXMguonbeEnZ_Y5PppWHVZ_pbM95tyyXLeYxh7-OYQFOu1aLhBWuyjAVFsE9evA",
+                "https://lh3.googleusercontent.com/R3EfDMzBdQuYJ-h_cX0VWsIxWMOQMuKwQ29i7XJ8Zk6ZE83-dxcnGdRMQcRI0UUYjygR3L_r3OHyiHjuJCo"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Ổ cứng HDD Seagate Barracuda 1TB 3.5 SATA 3 - ST1000DM010",
+            "price": "990.000",
+            "discountPrice": "1.050.000",
+            "discount": "6%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/yM1w_gitNAQySU4yoeo8WWsUvWQyH0je5-g0kzSzz6IR0iKYihExNww4lGJQBEd6KTB8JLTQQumHJMLg3NQ=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/yM1w_gitNAQySU4yoeo8WWsUvWQyH0je5-g0kzSzz6IR0iKYihExNww4lGJQBEd6KTB8JLTQQumHJMLg3NQ=w500-rw",
+                "https://lh3.googleusercontent.com/oo0HpUOhPXOibG4UTXmT_DXY4Ey8imyrmLAJZ-xKa44h1pa46kCfcRquRlZ57qg1HgPAJe5sAHZ7OPMIF80",
+                "https://lh3.googleusercontent.com/OUXQblnNCuuyBBafgrWSxurMEWTHg4vNamaIeMP30b3hAqupzyrMwePntEgLR22OsaUVun9n2CKt556IpX0"
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Mainboard MSI H410M PRO",
+            "price": "1.690.000",
+            "discountPrice": "1.790.000",
+            "discount": "6%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/GtFnbAHFQJja8VtybB5J2ReNFur4gIF1ane9PEb3IXi4TWWS-P_xOHmQZIq8sYSUx5KSRldZX85tgmzkCok=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/GtFnbAHFQJja8VtybB5J2ReNFur4gIF1ane9PEb3IXi4TWWS-P_xOHmQZIq8sYSUx5KSRldZX85tgmzkCok=w500-rw",
+                "https://lh3.googleusercontent.com/86zW0WsQK0K_0OeKisBBFxY_JVCxWDZ57MaAhlvn2---FZrBBDWll_VtrfWKTrgXEmtaKuLeXyTeBgNQ4zA",
+                "https://lh3.googleusercontent.com/a9mx7D1SvBFJdokIjR3Sssc5-mhZ24Wwgk2AmNjya4-8n6hvLRZZVC8E-awqgkiF7_7Cl1InjeH0HhRsT9pe",
+                "https://lh3.googleusercontent.com/45H1fFigA4KZa_demJmpgpxV465qyOnV7PWB90hXEviYtywz9kJNRXXvZh7cNj7defzWRfQ02XXp8FJvsWc",
+                "https://lh3.googleusercontent.com/f0AfvKkro0TkU69tIVb3RvS4s9vDACY0BDH2vtw25EpMYJYPIMyAAZAU4JCOUbSWPChQCvZ67CLjgJFeCmc"
+            ]
+        },
+        {
+            "id": 14,
+            "name": "RAM desktop KINGMAX (1x4GB) DDR4 2666MHz",
+            "price": "730.000",
+            "discountPrice": "790.000",
+            "discount": "8%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/tl140RoaryYtCRnMnQ1zJenLeWy0Byd_CwjCAf1x3ExnGjzC7c9-r3Bu458tqek067RdrPJsL5iW-i7qBQ=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/tl140RoaryYtCRnMnQ1zJenLeWy0Byd_CwjCAf1x3ExnGjzC7c9-r3Bu458tqek067RdrPJsL5iW-i7qBQ=w500-rw"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Nguồn máy tính GIGABYTE GP-P550B - 550W - 80 Plus Bronze",
+            "price": "950.000",
+            "discountPrice": "1.090.000",
+            "discount": "13%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/dMhmbeft4ZDoGxcePbIbDm_bxSanTb5hdNsWcMEefhcKoFG00TWgjmcpMCwXnY1H2nGOO6CjGCiui2EoSmw=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/dMhmbeft4ZDoGxcePbIbDm_bxSanTb5hdNsWcMEefhcKoFG00TWgjmcpMCwXnY1H2nGOO6CjGCiui2EoSmw=w500-rw",
+                "https://lh3.googleusercontent.com/HQYVTGCMDjcglbq4CXDlvs6rGCCg88F1baKC4nwV-xLrZXfIBW_GWnb5iChyYlf4T_Wn_0kvok9RRxDyOg",
+                "https://lh3.googleusercontent.com/_NF06B4OK-zfN9qCjp2uERCFrqFrzje7bX-Ow1i2r7l47Ojuf9FvIriXetLHKJbR6lYiEI8V6seSHDRdIg",
+                "https://lh3.googleusercontent.com/qg_rq1RQPiQSqr-run-wg_5Zi53VnGcIp7HuzTvSPYPiQWBRg8euIVAehkGJA5B0uwaDWrmhywAu6LjUAZo",
+                "https://lh3.googleusercontent.com/KaJtBeYLt1uvsJ3Hhim2t8EKGwssk9vzCgDBsmo89EbmbsBia7A6Zpp4t7ZhpJZJ8urY4xz5ZXhTs06FhDE",
+                "https://lh3.googleusercontent.com/lZQXA6E_CksKDFOcUePJy-gOBjey3gOurProQh76KLcGFZl8DpzIOsQ1VFTPMDr8JDImGd_y9rILiafEy9A"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Mainboard GIGABYTE H410M H",
+            "price": "1.650.000",
+            "discountPrice": "1.690.000",
+            "discount": "2%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/wuHx6qHIDBi8WtJogDB8nWX6Goqve2OCA1YWaluD-Jccg1fIckLT4LL8X5Lo9GrP-uNoQIbre7LABHMoplki=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/wuHx6qHIDBi8WtJogDB8nWX6Goqve2OCA1YWaluD-Jccg1fIckLT4LL8X5Lo9GrP-uNoQIbre7LABHMoplki=w500-rw",
+                "https://lh3.googleusercontent.com/J2E_OnFxgnsm-pLsfgNx0efAcI4PvR-2-ETAqHmkeG6AADFsi7Kpy9FG9tIT7yeYZKQep94j3sMz7660FdCZ",
+                "https://lh3.googleusercontent.com/Q8-uwLhKeeynpOvC__nJyZePoxThOUppw4nvuwRqh9tMsO375E8t8uYSgdIcN-4cxSQ5hbLDltN_8iZs8AIB",
+                "https://lh3.googleusercontent.com/ExCESO0WEmMTNwu7MG35UzDHYF5FJo57CUJY0ctfAzEz_Tebs_R9AyDtLP9t-5HZ16uCBInkXHit4TAKLGA"
+            ]
+        },
+        {
+            "id": 17,
+            "name": "RAM desktop KINGSTON Fury Black (1 x 8GB) DDR4 2666MHz (HX426C16FB3/8)",
+            "price": "1.150.000",
+            "discountPrice": "1.230.000",
+            "discount": "7%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/jnrkDz0U2NXBAhSC--Ty3sN63B2YCVaxCK-WPgYUf_emw6PyeQZLRFgZ55fRSygzzSk0E6XK8DASb52ageM=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/jnrkDz0U2NXBAhSC--Ty3sN63B2YCVaxCK-WPgYUf_emw6PyeQZLRFgZ55fRSygzzSk0E6XK8DASb52ageM",
+                "https://lh3.googleusercontent.com/jnrkDz0U2NXBAhSC--Ty3sN63B2YCVaxCK-WPgYUf_emw6PyeQZLRFgZ55fRSygzzSk0E6XK8DASb52ageM"
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Mainboard MSI H410M PRO",
+            "price": "1.690.000",
+            "discountPrice": "1.790.000",
+            "discount": "6%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/GtFnbAHFQJja8VtybB5J2ReNFur4gIF1ane9PEb3IXi4TWWS-P_xOHmQZIq8sYSUx5KSRldZX85tgmzkCok=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/GtFnbAHFQJja8VtybB5J2ReNFur4gIF1ane9PEb3IXi4TWWS-P_xOHmQZIq8sYSUx5KSRldZX85tgmzkCok=w500-rw",
+                "https://lh3.googleusercontent.com/86zW0WsQK0K_0OeKisBBFxY_JVCxWDZ57MaAhlvn2---FZrBBDWll_VtrfWKTrgXEmtaKuLeXyTeBgNQ4zA",
+                "https://lh3.googleusercontent.com/a9mx7D1SvBFJdokIjR3Sssc5-mhZ24Wwgk2AmNjya4-8n6hvLRZZVC8E-awqgkiF7_7Cl1InjeH0HhRsT9pe",
+                "https://lh3.googleusercontent.com/45H1fFigA4KZa_demJmpgpxV465qyOnV7PWB90hXEviYtywz9kJNRXXvZh7cNj7defzWRfQ02XXp8FJvsWc",
+                "https://lh3.googleusercontent.com/f0AfvKkro0TkU69tIVb3RvS4s9vDACY0BDH2vtw25EpMYJYPIMyAAZAU4JCOUbSWPChQCvZ67CLjgJFeCmc"
+            ]
+        }
+    ],
+    "housewear": [
+        {
+            "id": 0,
+            "name": "Quạt điều hòa Boss S-102",
+            "price": "3.790.000",
+            "discountPrice": "5.200.000",
+            "discount": "27%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/O7gLeeuM7LcmWn2OsXKV50ZiAPG6LrgyjTcGmb-vUtTOgyjbWNfo8eRKNqUyZHsArdKziQg2idvTFpTgjFvjByKWkE46OM824g",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/O7gLeeuM7LcmWn2OsXKV50ZiAPG6LrgyjTcGmb-vUtTOgyjbWNfo8eRKNqUyZHsArdKziQg2idvTFpTgjFvjByKWkE46OM824g",
+                "https://lh3.googleusercontent.com/jW9msQZAsHpKc9GLETop3T4MA79XDIQAowzhLK9Yxhn1cC97AxwWWsnW9_cLoFJOWOECx33prFdfXfzCuqVqYbTEzhFSIIdz7A",
+                "https://lh3.googleusercontent.com/6b0qazt9ceLbFj5ieQ9NLb9CYU5q-dkbviCcLTt8xuQNKI941FjqhdUO0OKmmUacbEd2WKh48REumVD7VYR9NqdwpjTnnxd4",
+                "https://lh3.googleusercontent.com/OooKKiPynwKpcHodYTU1CWOBv6r5YPf56NGHaNMZf-522UCgf3mIWDlTOQDO7rveYSbHM0aHvL5Wa9qCJURcjaGtR8jxeUw"
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Quạt điều hòa Midea AC200-19WV",
+            "price": "3.790.000",
+            "discountPrice": "4.590.000",
+            "discount": "13%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/t-qU-apY7fZkVkmmxu7Kha3zlR-9WAm_x0wwg_WimXQ-hTVaRm_fcEDeSuSQKgh0jCX2wd2nydeEbcDAQA",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/t-qU-apY7fZkVkmmxu7Kha3zlR-9WAm_x0wwg_WimXQ-hTVaRm_fcEDeSuSQKgh0jCX2wd2nydeEbcDAQA",
+                "https://lh3.googleusercontent.com/oaGMLLLCddb_qOzmOBlNYC7Amw0RIs9KwxGm3c_bEfMMJerpQUkV5RSB5V7EsKC5nVinTNETFU7X2CZkPmI",
+                "https://lh3.googleusercontent.com/AzmwwMMrjjPX8KqbsJxa_jjeNFY6W78BsuPI2tcPYGdJZYZbEBvY81hlvM9ZGsznAzqTBj2a_QCjgAPjHaE",
+                "https://lh3.googleusercontent.com/i3t-qqDjDOCc-wk30Qks_AvMRKuHrRMbd3xfN75wAzx7ny1CnlKVpoRJEr6MFQlrAS1ndeBx81D6NAe_N2w",
+                "https://lh3.googleusercontent.com/qaQ1cKhWzp_abOGOnFc1RJAkWnAXau_HXZUnBwSJ2QzXyaZlg3LZUlwFPyMhTkunBTivq9JSh7FB2uYTYo3C"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Máy xay sinh tố mini Hafele GS-621",
+            "price": "499.000",
+            "discountPrice": "890.000",
+            "discount": "27%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/-yC7ImwwmDGfKu6aOKY1Lq6Lrwpt4toHhgjRhEjvO-EQUHPpjL-J0MZdn0fycEw0WTXMdP0vgQ-JdO9r1lgs",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/-yC7ImwwmDGfKu6aOKY1Lq6Lrwpt4toHhgjRhEjvO-EQUHPpjL-J0MZdn0fycEw0WTXMdP0vgQ-JdO9r1lgs",
+                "https://lh3.googleusercontent.com/NCGXltnDnFqK2Ka_BPcPWVe6mnmmmryh-U3_6UQRCniHCDXfkSd4NSnBMDVjmyrF_igtSDE-tMQQfrJUa9w"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Máy xay sinh tố Philips HR2221/00",
+            "price": "1.190.000",
+            "discountPrice": "1.400.000",
+            "discount": "27%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/mYz0Mf_KELvChzR9pXIKLaEENvoR1mS0-rZ12vst7yYRpB6qKIGasMqdHnAgOkfHFlqvQQdtoFkPrDwkCg",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/mYz0Mf_KELvChzR9pXIKLaEENvoR1mS0-rZ12vst7yYRpB6qKIGasMqdHnAgOkfHFlqvQQdtoFkPrDwkCg",
+                "https://lh3.googleusercontent.com/UFj9DnwCv0oVYue9f_TmT9AeuXR6c39kXS0lsk8ln7AauBqL7-pzTC5XSN-EfGpWH-jgCmeJ9FZTCj7Lwg",
+                "https://lh3.googleusercontent.com/xXY_RHyRXHr_T0k4uFR_YUfAcFvzyvf-umbCJLEBo_jSHVB5wq76xi_KPJE-iKcuML4gPv2Xm0B5NRbgvYw",
+                "https://lh3.googleusercontent.com/hRoJWEL2gX61s_aDryKsYCTGf9nuUY9FnzZzhZPR3RD_O1YOnYOIigsY7E2YAZZmOKPnse334lzbX0523w",
+                "https://lh3.googleusercontent.com/17OTUw0jx3ioI6qElPMCZDKK8XQavbvx2-L6GfvMCdpgzI3Le7FAU7yc5w9xl7J-lpNmF8mYrqszY3zgR6Jm"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Cây nước nóng lạnh Toshiba RWF-W1669BV(K1)",
+            "price": "3.790.000",
+            "discountPrice": "5.300.000",
+            "discount": "28%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/v3aOI3RJn0qzR4BOlIJ7LvJYpfrrvF4DLf8T4hz6y-6Cfxo_N7beIy4Z9z3bcF_PjAhSxlDT612kVZaetVKzx78i5psQdye5",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/v3aOI3RJn0qzR4BOlIJ7LvJYpfrrvF4DLf8T4hz6y-6Cfxo_N7beIy4Z9z3bcF_PjAhSxlDT612kVZaetVKzx78i5psQdye5",
+                "https://lh3.googleusercontent.com/T9CSZozYUsKFMfW84MYlPXUVhZKIh11jrkjqyXq5QNGBzhSDssW0zKEjDlWirAgP-9CT-vfnH0lRaBB1BAZeqKvoyJ9J96Di",
+                "https://lh3.googleusercontent.com/b35xb4SS0oUwBOxprAvQi9v7N4x9HKhX-DWe4DUDDEdndr0cViR2mMnpjp3jKUdmxs_FCP4YCY3SRgU-0HCOPmAhWyq79cfH",
+                "https://lh3.googleusercontent.com/KQaXtypMuTC2W-g9WDAVjcPQWXtxXZYBeniJn8kjL5v-3Gsl4yqdjFF3slaNLn8zfr1uA7RkXdYadER0EwLld7D7my9b488c"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Máy lọc nước RO AOSmith AR75-Z7",
+            "price": "10.949.000",
+            "discountPrice": "12.800.000",
+            "discount": "14%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/pwaneTFYEgLV8Hm9AAcDbYzWdPkKEOtzuW0inBLeOIH1XIf2xATZ0ldj3YSSL-IgD6yIWD760gKgmbP6sfM",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/pwaneTFYEgLV8Hm9AAcDbYzWdPkKEOtzuW0inBLeOIH1XIf2xATZ0ldj3YSSL-IgD6yIWD760gKgmbP6sfM",
+                "https://lh3.googleusercontent.com/xv8MhxFvfgN75oDwrtskyZ4tCOVCL-is7WsdGXgO9sYlfB9LSAexgPVtOSJZIbcuFQo-aQoOWb1fUzJslA",
+                "https://lh3.googleusercontent.com/OTAYNz8-6iE6bS0yDhgS5jUFByA8TZZ81Jhzl_SfaWvp-EboY2rA-7rIi6IZFDWKTMWT19Wwcx-DkVWAvUY"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Nồi Chiên Không Dầu Hafele AF-68A (3.2 lít)",
+            "price": "1.990.000",
+            "discountPrice": "2.990.000",
+            "discount": "33%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/789TH6zH16GRnsynT69SbTgHv82js3bm2unCSO8ZNCkKlVfjFwSkOMrkvMt9-ARUWPYndPWCB-HeW2iFFOK_",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/789TH6zH16GRnsynT69SbTgHv82js3bm2unCSO8ZNCkKlVfjFwSkOMrkvMt9-ARUWPYndPWCB-HeW2iFFOK_"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Nồi chiên không dầu cỡ lớn Hafele AF-602A (11L)",
+            "price": "3.190.000",
+            "discountPrice": "4.990.000",
+            "discount": "36%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/oc_cB0uedH4qHZGYtTgvYUlMEZhxAGSFjNRrl6Xkryxk8La7bDY4PeTcpB-AkLS-0Vk2S2pSl1_Q-r3NAkw=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/oc_cB0uedH4qHZGYtTgvYUlMEZhxAGSFjNRrl6Xkryxk8La7bDY4PeTcpB-AkLS-0Vk2S2pSl1_Q-r3NAkw=w500-rw",
+                "https://lh3.googleusercontent.com/BfbKcLSltvFgox9MP7NCDcVeBlcHivzy-VLeKdqpiEafrhPhTzXPbDyB8ExHPAhJSkiiXtDeRqRi9M9ULrc",
+                "https://lh3.googleusercontent.com/UU47sSPYpdDnZ465vAxxMNzrOLa0AJuUlzSr5oc7BUOV66c-CIwlzOJ_DnGNudtpjWS0_Bl9UeagkDRzJOvn",
+                "https://lh3.googleusercontent.com/EJifzPi7EJdIytoEGHduKmyj5GbWZyePLNGEZBGROZtI-hEC6gLsIkR2q-cqZZOw0YbZG_o9tTY55vWkkNEe",
+                "https://lh3.googleusercontent.com/tDwADODe_PLltw9K4EVCOf4a6wUCMsaHbHIQbxB07zYcVwNak6BekY_F6JXgHzSjebCtbZzZ_H7zmus8tKs"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Bàn ủi hơi nước đứng Panasonic PABU-NI-GSD051GRA",
+            "price": "2.290.000",
+            "discountPrice": "2.790.000",
+            "discount": "18%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/QKsjWSEeR538ff9cJG04TH30vOgsiTTgA6f7oQjoPuhsuS_0IPsyYEyRXL9EDbctgAIM9DDekphYpQLGQC0=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/QKsjWSEeR538ff9cJG04TH30vOgsiTTgA6f7oQjoPuhsuS_0IPsyYEyRXL9EDbctgAIM9DDekphYpQLGQC0=w500-rw",
+                "https://lh3.googleusercontent.com/-BiiL48XN_v3boKtC-vcQlLKhBNZunaitn-dC28eX8E9cjUuPbwss3klsYKwYTzIhS4pUQGIgsSA4j5TBD4g",
+                "https://lh3.googleusercontent.com/CvWskC5p_yN8sTvDppFiyXMMDkGSRVa3AuuPUq6P4dBWzEa2062akLivwEw3pgJNZdPoNqp1mtrFIhPOGA",
+                "https://lh3.googleusercontent.com/t8evc8ntUXEkmn-a3fRTtCU2PbDX92FDEC-VD92MtCvCX3ThpF3aWS9f6zzWijNIGPDLPfDYo1L8Vcpmz4Q",
+                "https://lh3.googleusercontent.com/jTIgIuyolAxlvaXyFoawJH_zXBJpPCh-iXTqbg3kn0s1defg661CqSyvLu7--xDilAJkGcOCU-INgPvhzGw"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Bàn ủi hơi nước cầm tay Deerma HS218",
+            "price": "1.099.000",
+            "discountPrice": "1.990.000",
+            "discount": "45%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/wY4s0Mequ7Yu47KhyUL6TqRmg1aeOFiayMHPkt4-8PqeU2N299dSEUsT5sN82hoiO0rzLfn8_hxIm0PsSpGf6q046BxVNJU=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/wY4s0Mequ7Yu47KhyUL6TqRmg1aeOFiayMHPkt4-8PqeU2N299dSEUsT5sN82hoiO0rzLfn8_hxIm0PsSpGf6q046BxVNJU=w500-rw"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Lò vi sóng cơ Sharp R-205VN",
+            "price": "1.790.000",
+            "discountPrice": "",
+            "discount": "",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/JjVfAyIpGPmsMp3F9jhPZVAyZ41QKQiJcgnfbFuyEBCOASGTrrKNTt1yhkvBuMRU5Ao9QG4KxZIXu2f8mY8=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/JjVfAyIpGPmsMp3F9jhPZVAyZ41QKQiJcgnfbFuyEBCOASGTrrKNTt1yhkvBuMRU5Ao9QG4KxZIXu2f8mY8=w500-rw",
+                "https://lh3.googleusercontent.com/5U7TufntccDrfw9lUkC_vFIuXK3YQrAhNKMezkXjJY7TkiZf4APEy1S12dUHdMIRa7Mf4E00R256Y9_vxQ"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Lò vi sóng có nướng Toshiba ER-SGS23(S1)VN 23 lít",
+            "price": "2.890.000",
+            "discountPrice": "",
+            "discount": "",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/QwF52OtcPC_g5Av72BNnbjxlp5lLRA8ZPX_1afEMwdJZHkN8WRcHTuUDdyvvs2EylF4ettXTYvnVrv00LA=w500-rw",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/QwF52OtcPC_g5Av72BNnbjxlp5lLRA8ZPX_1afEMwdJZHkN8WRcHTuUDdyvvs2EylF4ettXTYvnVrv00LA=w500-rw",
+                "https://lh3.googleusercontent.com/PDxcMo-5TtbZMx5ZWolcyOXKaJBJ94PyL00BqE-bxvt-JVtAukcifvfb3ca90Nd_skaBLbyDjwiQuy-5aw",
+                "https://lh3.googleusercontent.com/lqXqyazEgmCsNkhg5XSkESMdkWSKcsaUvDW08EO2tVqXa-V-f0Vwz0RbwnUZ5Lp6HryWMW3dRsR56pD72uGS",
+                "https://lh3.googleusercontent.com/6HhDvEIUahvZf0Fyrp_byMn0dZZbELDrVKdgQQ54NCnmcrkVZTAJIGafYCYz9XMH-9R5D0YF9Hh_eCUrUNs",
+                "https://lh3.googleusercontent.com/HJhAmYDSEivJPWkokeymfGRc7mrz5j8b1okVu9bfIYvItA6Qh2e7rRjfcMMGRpuVyhoqTFOk4fuGSg1X4nc"
+            ]
+        }
+    ],
+    "phone": [
+        {
+            "id": 0,
+            "name": "Điện Thoại Di Động iPhone 11 64GB (BLACK) (MHDA3VN/A)",
+            "price": "17.290.000",
+            "discountPrice": "21.990.000",
+            "discount": "21%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/kXogjRcyHMDNQ6Nd9Pq0ZO-BJ8BkIUA9dNxB4km573t4qGOa2xlgAdK5CTDVHPAGmV5Lu_t8bvfKViOH6J70f6xMz9GxcZI",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/kXogjRcyHMDNQ6Nd9Pq0ZO-BJ8BkIUA9dNxB4km573t4qGOa2xlgAdK5CTDVHPAGmV5Lu_t8bvfKViOH6J70f6xMz9GxcZI",
+                "https://lh3.googleusercontent.com/WFo9Zr--EbcDZUj0jJavgFtDlkMRtFe-thc66gQTZv5w1kBIGBjPH9h7Ytq_C6-Hogx2SbjMrK3yx-OPiO-yfA2HmYNHN0S7",
+                "https://lh3.googleusercontent.com/afUtMNOKIj9pkTs4W7G90fbZzuo0VcOmEVbzuWoSo7fTMCJ--U40VoMmQ108_kJ69P-8Nn7njgU9XOdKamb8G6F3A_NomAmzYQ",
+                "https://lh3.googleusercontent.com/2wYQFexEyxWMfrzPMgTdkVq6Pd_kffPqvSnkWrwZeC6Ic7tTaV1igAQwa7oxXfKCUdW8SJTcYkuV2Y8H717ZQ6YzBYnZF8k",
+                "https://lh3.googleusercontent.com/hXeqqvPs8z_np4cbuA56zlTafNSCNNZTRZiwZ4A3pVdsVtrLgwMzdZ_hDpP1Tsk9cxTeiOOva_YLuHZpSz0QRmJpCXTfzG-E"
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Điện Thoại Di Động iPhone 11 64GB (PURPLE) (MHDF3VN/A)",
+            "price": "17.290.000",
+            "discountPrice": "21.990.000",
+            "discount": "21%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/hvBvg6wDgTzmr8YTj0515kEHf2Do85qvlZePJnTGcUN4wdcFRcRDtwiT1dtVcoRunVMemeiX1dxBtLM2vJ3sU6AqVs8MUmM2rQ",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/hvBvg6wDgTzmr8YTj0515kEHf2Do85qvlZePJnTGcUN4wdcFRcRDtwiT1dtVcoRunVMemeiX1dxBtLM2vJ3sU6AqVs8MUmM2rQ",
+                "https://lh3.googleusercontent.com/t45KWJTB11wPyuBUJj3EBqaGp2MxHfo3sIT58PXpJpeQn1VestP4dF_UwImfF9kpFhnKLGq7E3wj9rnVFeI8vHSyaRp2kKY",
+                "https://lh3.googleusercontent.com/fqSf2nxPnDBmOvOeXO8rewrNE2tCIwEUtsoeJ4-tlSWgohkuNeN4UCe0pyrzY-eb1Hy_kWEpKFawrh0_JilFnp7PWy6P5W6D",
+                "https://lh3.googleusercontent.com/FHN0ciGZ6CuUsWcj09ec_rQmYGRNL12cjBdaCc_fv5e2D4eWplT0ALdKGlqgKI-L-M-6Y3gnVc7n2SVq62FaDxjZPSWAhlg",
+                "https://lh3.googleusercontent.com/ciZOmSC1gXpkOP2yuquW44MOlbXlrWOxAzhVwkfIM_IitGgEcEKOIoqLesiro2HR61iQpTF_ssLCHZDVD89ix3PQ-773jWG6",
+                "https://lh3.googleusercontent.com/Cp6VkQStHbMax3lw92jZ1NYxq5ElH0xt6x2U13t7PVlvu6xxWYkej19vflgev-s8jRzC1-oyV7iXGOURdc3cE-vaUsKsugWf"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Apple Watch Series 3 (GPS 42mm) Viền Nhôm Bạc - Dây Màu Trắng",
+            "price": "6.090.000",
+            "discountPrice": "9.990.000",
+            "discount": "39%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/o-gu1jw1UtfM0R3EuYkfaJt2ulkAMr8ahhf-0PHeYw1Y-otQJHjR3PwtOlHJRp0fuLT5lAdydJr4jHl62grU",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/o-gu1jw1UtfM0R3EuYkfaJt2ulkAMr8ahhf-0PHeYw1Y-otQJHjR3PwtOlHJRp0fuLT5lAdydJr4jHl62grU",
+                "https://lh3.googleusercontent.com/dlwr9U6-5mNzDsaP2YJZHpBRei5XCVLCCwWjk6L1WJ_uomc0_1-aSujLN4QnzFShqc-gPZrRP0nr1WON_g",
+                "https://lh3.googleusercontent.com/LIetNefdlfcYjzkeEPHTY0yS6t-ObyMDAH9b0U0Zho9Rsp3hdSSOC2RIIaL4HqCqxialXaX9foYhR9DOPKgc"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Đồng hồ thông minh AMAZFIT GTS VERMILION ORANGE (Đỏ)",
+            "price": "2.599.000",
+            "discountPrice": "2.990.000",
+            "discount": "13%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/w0PTWoJ96-zq31u4WIDYOp976c0gx31-Oe5a7JoaMUEWtpAR-C4Wux76-v_uXRuo3IBxS5UyUPe3LFd4btyq",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/w0PTWoJ96-zq31u4WIDYOp976c0gx31-Oe5a7JoaMUEWtpAR-C4Wux76-v_uXRuo3IBxS5UyUPe3LFd4btyq"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Đồng hồ Apple Watch S5 (GPS) 40mm - Viền nhôm xám, dây cao su đen",
+            "price": "10.999.000",
+            "discountPrice": "13.990.000",
+            "discount": "21",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/3wA6JDO4DW6PywlA4oSTCdpyZ1MnY9j8NYgAX_RsN5KC-XMQRp4jugUAVU4ZV8AlG26l3SboFN7dgxwPKGI",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/3wA6JDO4DW6PywlA4oSTCdpyZ1MnY9j8NYgAX_RsN5KC-XMQRp4jugUAVU4ZV8AlG26l3SboFN7dgxwPKGI",
+                "https://lh3.googleusercontent.com/T5lZCNHMDqJ7-M99x-Vqhx4RFdEgIXOCUtgjNsndQITO2_cMQWvKXEbmXVy0mIZEYogRxBHIm_q4wYYZGv2V",
+                "https://lh3.googleusercontent.com/aIYDEfMoD115vA-bOP2bW8lD-xvsEwL0j19XnI5JVwif3bNoe8yMxg6eDyRIFkwnEusnEdnDlDE9vqDbsYAC"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Máy tính bảng Apple iPad Air 4 (2020) 10.9 Wifi 64GB (MYFN2ZA/A) (Bạc)",
+            "price": "15.490.000",
+            "discountPrice": "16.990.000",
+            "discount": "9%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/O93ncIonVh15-C2QnyOh0RhtsT2wiDGWFMKxA3TaB4066SQdlKGemGM3l9MwwEphj2JUl4HqgMgWTr9zpNiKXaC-dO-tpVlubQ",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/O93ncIonVh15-C2QnyOh0RhtsT2wiDGWFMKxA3TaB4066SQdlKGemGM3l9MwwEphj2JUl4HqgMgWTr9zpNiKXaC-dO-tpVlubQ",
+                "https://lh3.googleusercontent.com/BXZFwH_u7r0sksXcB9rX0c65hzZoqRSFKWIL3ZabIZKUpBIVZPQ7xj-WQdHvgRRMCt6YR5y1KWxbHrrbEgmKgqrER6d6pnvZlw",
+                "https://lh3.googleusercontent.com/YqvyUutp30VknBaOSTu7ZxcziAViWQqK6xUDp89hRZuGJCV76uoNdee05QNUWhnaTTaIwbJJpk3m2wF_LJUBWJs-VTfibJio"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Điện Thoại Di Động iPhone 12 128GB (PRODUCT) RED MGJD3VN/A",
+            "price": "24.690.000",
+            "discountPrice": "26.990.000",
+            "discount": "9%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/6ctARuhWCQFc-cN2Ou5jd8dmmi_K5blxSPDcLVN1lv2GhQSnmHzqK_ccYN4oKWUTo4B8zBIXD8BoCzwG5g",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/6ctARuhWCQFc-cN2Ou5jd8dmmi_K5blxSPDcLVN1lv2GhQSnmHzqK_ccYN4oKWUTo4B8zBIXD8BoCzwG5g"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Điện Thoại Di Động Samsung Galaxy Note 20 Ultra (Đồng) SM-N985FZNGXXV",
+            "price": "27.390.000",
+            "discountPrice": "29.990.000",
+            "discount": "9%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/6NAyqBFVQCcDz9ropEpZGLIHkq65iSF3NuW8FgwmBEWvZ_gxiO3iZTxfDqAy8mlAY4CfNWe_zGMpR8pjXFU",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/6NAyqBFVQCcDz9ropEpZGLIHkq65iSF3NuW8FgwmBEWvZ_gxiO3iZTxfDqAy8mlAY4CfNWe_zGMpR8pjXFU",
+                "https://lh3.googleusercontent.com/vOs9TX3i1AOLZgdQSE-1cdICul6jjM8X4qDTjOKDnsQm2UwmwKa0vKw9Fif9w_s6z-PNhJyFBHdgQdNMqw",
+                "https://lh3.googleusercontent.com/JXTaNLLn88XagSSr9viUtP1Q7UQ0AYUlyN_fuxioIHIJHBcybpz_Fcfz2uE0sW0BX5Y46hCelEYWBDVPhA",
+                "https://lh3.googleusercontent.com/F5JGUtl_I2rtbcSYkMUqHyM8kmdIXYQDNY5ITtuTeqyzhEfCt2STAbH0kg-_T4awhyGfRIQ8XMV15CVby9Y",
+                "https://lh3.googleusercontent.com/8mkkWIGpI0wtgpG9mYYtH7MEzTSZysm_r6IsjUlSk3k05BRToJ75xPPKeRM3Hhzk8CfUFg066_HEDsQEYeE"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Điện Thoại Di Động Samsung Galaxy A21S, 32GB (SM-A217FZWDXXV) (Trắng)",
+            "price": "4.290.000",
+            "discountPrice": "4.690.000",
+            "discount": "9%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/AW9o0Et67GXxFd6i8cpkYnrmmyKFem9i21X6VJPwTnoGBRL6ArI5fUILUndftcceZ3dS1OkQqKvW7oEQOImB",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/AW9o0Et67GXxFd6i8cpkYnrmmyKFem9i21X6VJPwTnoGBRL6ArI5fUILUndftcceZ3dS1OkQqKvW7oEQOImB",
+                "https://lh3.googleusercontent.com/d_vf3w4rIJx6BPHXR44jX9qM5FrXKjL4ngU8HfqOBvDEk_yJEhD6_MrybKtb9I-oAhIvcGGArGwtH3nnPNqp",
+                "https://lh3.googleusercontent.com/VnnkVCCnksGlfdMmHK854wGMNrOYRuQ-U0hi6Dmt7FFCztbHsdsuRGo3z0ZqmqKYaE_Dl190KtRRpYWwTQ",
+                "https://lh3.googleusercontent.com/eciTobRVa535H3AJIbP7FyyIifzpxXLmyVdP_2Yv4pFEd6M-ZvCTBhy-P97Se40O8BTAvPhMYvN6MrBcJ4g",
+                "https://lh3.googleusercontent.com/toDWT5ec1UHoY0s27_qPM6qf1GvBkRzZUjhI3CNTcYMeB1dEdIG7rTNEO25deNT8fWZt78nKb4kAIBUaxWU"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Điện Thoại Di Động Samsung Galaxy Z Flip, 256GB (SM-F700FZPDXEV) (Tím)",
+            "price": "32.990.000",
+            "discountPrice": "36.000.000",
+            "discount": "8%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/o8FLozSpltnqAzG8OhICmFD-HoP4bRrJoGgw5LTWr1pn27mcYYkHg1MN4ja_h_1EPL03AX2t612sMgLdwQ",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/o8FLozSpltnqAzG8OhICmFD-HoP4bRrJoGgw5LTWr1pn27mcYYkHg1MN4ja_h_1EPL03AX2t612sMgLdwQ",
+                "https://lh3.googleusercontent.com/p7TW6TDpPWW5zZZe-ZLojGJVbQFTo434tVDlQsfUkyIxYa154HWyklFvMLU-SVddnXJuTMGk33AawOU3UnI",
+                "https://lh3.googleusercontent.com/M52iHerfKQZRwwXltVFRCRrSeWZSEsR5YbUvLKw09ln79AYylDh1WLVt2fZ1EoDfoftkeGnylXv7PQHbXvg",
+                "https://lh3.googleusercontent.com/B90l_dN7hPbqfC5Cn58bUnoa5laT-MBy-yaNiag92HBhbwJzgQTcrDVK9bzhA9pB8zJFrNbHriHjnpV_NxEy",
+                "https://lh3.googleusercontent.com/pgXbL0uDnwlY1ALr0lBcLYgbo3IUWw8ChyICi_ahaEtzZEJhYkPVaiRNEoHhMstDv5E8_-cVIqOftpixJuen",
+                "https://lh3.googleusercontent.com/mmB09DYIEaU-DaQJJMHLrVmOZ2OMHaCXZxsUn2XTiLKR0pXOfOgC488DrnPkosJZawuR2Tt1mB7iPgvfDys"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Điện Thoại Di Động Samsung Galaxy Note 20 (Xám) SM-N980FZAGXXV",
+            "price": "21.990.000",
+            "discountPrice": "23.990.000",
+            "discount": "8%",
+            "gift": [],
+            "image": "https://lh3.googleusercontent.com/M8fKY2clhxNPe9kfufqumGQAAS2b2Ye49aVRM2L4pxrnKMx832w7zq11YCT6Vn7YCaGBNZB3GhhWhnHiiNs",
+            "imageFull": [
+                "https://lh3.googleusercontent.com/M8fKY2clhxNPe9kfufqumGQAAS2b2Ye49aVRM2L4pxrnKMx832w7zq11YCT6Vn7YCaGBNZB3GhhWhnHiiNs",
+                "https://lh3.googleusercontent.com/3_ox2W8PvkU-flFMxkM1rwMaFEmMyeBrB6V8xUCKEKV-2RTN2KDm6-iodS11bSNp9CaBLyHXhNUrxrSdw_8",
+                "https://lh3.googleusercontent.com/_okIlqDykz6-cRyGXeDYlsrIzhMn8QNhAhIDYD9r0U6TUE_Samqttd632qWvn8Vd3_dX4uVPQwx3N38w3g",
+                "https://lh3.googleusercontent.com/8TVfIh2UtDbSIumxOn1wlSax-En4aZA1Wgf2FgbsDIuUethZ0VTikJgqM52ZR2y_x8YW9E0nOG3Y-1A2cgO9",
+                "https://lh3.googleusercontent.com/JowzvIj2aPA09IjL5acHhLWGf1enh3Zpgi3QGJoE6UwPD7tPzR0HEvTbbYC7bpn-GFwts694QzgiB93RhYI"
+            ]
+        }
+    ]
+}

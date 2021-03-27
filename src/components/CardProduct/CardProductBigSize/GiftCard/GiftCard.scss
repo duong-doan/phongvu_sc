@@ -1,0 +1,19 @@
+@import "../../../../assets/variable/variable";
+
+.card_product-gift {
+    display: flex;
+    align-items: center;
+
+    span {
+        font-size: 1.4rem;
+        color: $text-main-color;
+        margin-right: 8px;
+    }
+
+    .gift-img {
+        border-radius: 5px;
+        border: 1px solid $text-main-color;
+        width: 30px !important;
+        height: 26px !important;
+    }
+}

@@ -1,0 +1,145 @@
+@import "../../../assets/variable/variable";
+
+.header__toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5rem;
+    height: 100px;
+    width: 100%;
+
+    background-color: white;
+
+    .header__toolbar__logo {
+        width: 20%;
+
+        .sticky-menu__listProduct {
+            display: none;
+        }
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .header__toolbar__search {
+        width: 42%;
+        position: relative;
+
+        input {
+            width: 100%;
+            font-size: 1.4rem;
+            padding: 0.8rem 1rem;
+            outline: none;
+            border-radius: 8px;
+            border: 1px solid rgb(211, 210, 210);
+            background-color: rgb(241, 241, 241);
+        }
+
+        ::placeholder {
+            font-size: 1.5rem;
+            color: $text-sub-color;
+        }
+
+        .toolbar__search-wrap {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+
+            width: 36px;
+            height: 90%;
+            border-radius: 8px;
+            background-color: $primary-color;
+
+            i {
+                position: absolute;
+                top: 50%;
+                right: 18%;
+                transform: translate(-18%, -50%);
+                font-size: 1.6rem;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+
+    .header__toolbar__item {
+        width: 34%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 2rem;
+
+        a {
+            width: 25%;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .toolbar__item-voucher,
+        .toolbar__item-order,
+        .toolbar__item-login,
+        .toolbar__item-cart {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: $text-sub-color;
+
+            i {
+                font-size: 2.6rem;
+                margin-bottom: 0.6rem;
+            }
+
+            span {
+                font-size: 1.4rem;
+            }
+        }
+
+        .toolbar__item-voucher:hover,
+        .toolbar__item-order:hover,
+        .toolbar__item-login:hover,
+        .toolbar__item-cart:hover {
+            color: $hover-primary-color;
+            transition: linear 0.2s;
+            cursor: pointer;
+        }
+    }
+}
+
+.sticky-menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 80px !important;
+    transition: ease 0.2s;
+
+    .header__toolbar__logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            object-fit: contain;
+            width: 40px;
+            height: 40px;
+            margin-right: 16px;
+        }
+
+        .sticky-menu__listProduct {
+            display: block;
+            z-index: 1000;
+            border: 1px solid $text-sub-color;
+            padding: 8px;
+            border-radius: 4px;
+            i {
+                font-size: 1.5rem;
+                margin: 0 6px;
+                color: $text-sub-color;
+            }
+
+            span {
+                font-size: 1.5rem;
+                color: $text-main-color;
+            }
+        }
+    }
+}

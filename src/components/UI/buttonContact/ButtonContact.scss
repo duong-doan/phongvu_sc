@@ -1,0 +1,12 @@
+@import "../../../assets/variable/variable";
+
+button {
+    background-color: $bg-button-primary;
+    width: 30%;
+    color: $primary-color;
+    padding: 0.4rem 0.6rem;
+    outline: none;
+    border: 1px solid $price-discount-color;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}

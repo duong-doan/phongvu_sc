@@ -1,0 +1,109 @@
+@import "../../../assets/variable/variable";
+
+.main__productForU {
+    width: 90%;
+    margin: auto;
+    background-color: $bg-color-primary;
+    border-radius: 10px;
+    margin-top: 16px;
+    padding-top: 16px;
+    position: relative;
+
+    .productForU-wrap-name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 97%;
+        margin: auto;
+        h4 {
+            font-size: 2rem;
+
+            &::after {
+                content: "";
+                width: 3px;
+                height: 20px;
+                position: absolute;
+                top: 2%;
+                left: 0;
+                background-color: $bg-near-title;
+            }
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+    }
+
+    .productForU-wrap-product {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $bg-border-separate-product;
+        padding-top: 16px;
+
+        .card_product_big_size {
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+}
+
+.loader,
+.loader:before,
+.loader:after {
+    background: #222ed2;
+    -webkit-animation: load1 1s infinite ease-in-out;
+    animation: load1 1s infinite ease-in-out;
+    width: 1em;
+    height: 4em;
+}
+.loader {
+    color: #222ed2;
+    text-indent: -9999em;
+    margin: 88px auto;
+    position: relative;
+    font-size: 11px;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+    position: absolute;
+    top: 0;
+    content: "";
+}
+.loader:before {
+    left: -1.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+.loader:after {
+    left: 1.5em;
+}
+@-webkit-keyframes load1 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0;
+        height: 4em;
+    }
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+    }
+}
+@keyframes load1 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0;
+        height: 4em;
+    }
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+    }
+}

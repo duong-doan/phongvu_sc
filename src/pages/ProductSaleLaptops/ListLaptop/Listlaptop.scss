@@ -1,0 +1,12 @@
+.containerProduct-wrap-product {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        width: 20%;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

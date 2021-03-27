@@ -1,0 +1,49 @@
+@import "../../assets/variable/variable";
+
+.productSaleLaptops {
+    width: 100%;
+    padding-bottom: 20px;
+    background-image: url("https://storage.googleapis.com/teko-gae.appspot.com/media/image/2021/2/18/20210218_3688f453-4e22-4b03-831e-3b153e114df1.jpg");
+
+    .productSaleLaptops__banner {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .containerProduct-wrap-product {
+        margin-bottom: 20px;
+    }
+
+    .productSaleLaptops__wrap--item {
+        .productSaleLaptops__wrap--policy {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto 20px;
+        }
+
+        .wrap--item--promotions {
+            width: 90%;
+            border-radius: 10px;
+            margin: auto;
+            display: flex;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                &:hover {
+                    transition: all 0.2s;
+                    transform: scale(1.05);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .wrap--item--title {
+            width: 90%;
+            display: flex;
+            margin: auto;
+            display: flex;
+        }
+    }
+}

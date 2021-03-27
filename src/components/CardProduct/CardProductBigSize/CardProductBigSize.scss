@@ -1,0 +1,79 @@
+@import "../../../assets/variable/variable";
+
+.card_product_big_size {
+    width: 234px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 8px;
+    padding: 0 16px;
+    overflow: hidden;
+    background-color: white;
+    margin-right: 10px;
+
+    &:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .card_product_big_size-sub {
+        &:hover {
+            transition: all 0.4s;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .card_product_big_size-img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .card_big_size-name {
+            font-size: 1.3rem;
+            color: $text-main-color;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        button {
+            margin-top: 10px;
+            font-size: 1.4rem;
+            border-radius: 5px;
+        }
+
+        .card_big_size-newPrice {
+            margin-top: 1rem;
+
+            .newprice {
+                font-size: 1.6rem;
+                margin-right: 12px;
+                color: $primary-color;
+                font-weight: 500;
+            }
+
+            i {
+                font-size: 1.5rem;
+                color: chartreuse;
+            }
+        }
+
+        .card_big_size-oldPrice {
+            margin-bottom: 10px;
+
+            .oldPrice {
+                font-size: 1.3rem;
+                margin-right: 12px;
+                text-decoration: line-through;
+                color: $text-main-color;
+            }
+
+            .discount_percent {
+                font-size: 1.5rem;
+                color: $price-discount-color;
+            }
+        }
+    }
+}

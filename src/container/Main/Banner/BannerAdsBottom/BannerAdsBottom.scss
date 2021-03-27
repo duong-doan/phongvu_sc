@@ -1,0 +1,26 @@
+.product__item-wrapAdsHorizontal {
+    position: absolute;
+    bottom: -24%;
+    left: 5%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+    a {
+        background-color: transparent !important;
+    }
+
+    .main__banner__product-item-adsHorizon:nth-child(2),
+    .main__banner__product-item-adsHorizon:nth-child(3) {
+        margin: 0 5px;
+    }
+
+    .main__banner__product-item-adsHorizon:nth-child(1) {
+        margin-right: 5px;
+    }
+
+    .main__banner__product-item-adsHorizon:nth-child(4) {
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,15 @@
+.main__banner__product-item-ads {
+    width: 200px;
+    height: 220px;
+    z-index: 100;
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+        object-fit: contain;
+        &:hover {
+            transition: all 0.8s;
+            transform: scale(1.05);
+        }
+    }
+}

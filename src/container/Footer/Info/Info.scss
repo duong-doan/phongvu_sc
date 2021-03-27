@@ -1,0 +1,47 @@
+@import "../../../assets/variable/variable";
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        h4 {
+            font-size: 1.5rem;
+            margin: 16px 0;
+        }
+
+        li {
+            font-size: 1.2rem;
+            margin: 8px 0;
+            &:hover {
+                color: $primary-color;
+                cursor: pointer;
+            }
+
+            span {
+                font-size: 1.2rem;
+                margin: 8px 0;
+                color: blue;
+            }
+        }
+
+        .list-social-itemLink {
+            display: flex;
+            align-items: center;
+            i {
+                font-size: 1.4rem;
+                margin-right: 8px;
+            }
+        }
+
+        .list-email-itemLink {
+            &:hover {
+                color: $text-main-color-2;
+            }
+        }
+    }
+}

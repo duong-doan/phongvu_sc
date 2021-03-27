@@ -1,0 +1,46 @@
+@import "../../../../assets/variable/variable";
+.sale_product_buttonSwitch {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .sale_product_buttonSwitch-laptop,
+    .sale_product_buttonSwitch-wifi {
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        z-index: 100;
+
+        h4 {
+            color: $text-white-color;
+            margin-top: 10px;
+            font-size: 2rem;
+        }
+
+        span {
+            font-size: 1.4rem;
+            color: $text-white-color;
+        }
+    }
+
+    .sale_product_buttonSwitch-laptop:hover,
+    .sale_product_buttonSwitch-wifi:hover {
+        cursor: pointer;
+    }
+
+    .active {
+        background-color: white;
+
+        h4 {
+            color: $text-main-color;
+        }
+
+        span {
+            color: $text-main-color;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.banner_full_width {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    img {
+        object-fit: contain;
+        &:hover {
+            cursor: pointer;
+            transition: all 0.8s;
+            transform: scale(1.05);
+        }
+    }
+}
