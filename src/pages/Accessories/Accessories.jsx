@@ -1,21 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { Fragment } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
-import './Accessories.scss'
-
-import ContainerProduct from '../../components/ContainerProduct/ContainerProduct'
-import CartProductBigSize from '../../components/CardProduct/CardProductBigSize/CardProductBigSize';
+import './Accessories.scss';
 import BannerFullWidth from '../../components/BannerFullWidth/BannerFullWidth';
+import CartProductBigSize from '../../components/CardProduct/CardProductBigSize/CardProductBigSize';
+import ContainerProduct from '../../components/ContainerProduct/ContainerProduct';
+import Toolbar from '../../container/Header/Toolbar/Toolbar';
 
-const Accessories = () => {
-    const [dataAcc, setDataAcc] = useState(null)
 
-    useEffect(() => {
-        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/accessories.json')
-            .then(res => {
-                setDataAcc(res.data)
-            })
-    }, [])
+const Accessories = ({ dataAccessories }) => {
+    const dataAcc = dataAccessories.filter(product => product.idCategory === 'acc01')
+
     let productItem = <div style={{ height: '200px', width: '90%', margin: 'auto' }}>
         <p className="loader"></p>
     </div>
@@ -24,9 +19,8 @@ const Accessories = () => {
         productItem = (
             dataAcc.map(product => {
                 return (
-                    <Link to={`/accDetail/${product.id}`}>
+                    <Link to={`/accDetail/${product.id}`} key={product.id}>
                         <CartProductBigSize
-                            key={product.id}
                             url={product.image}
                             name={product.name}
                             price={product.price}
@@ -38,13 +32,22 @@ const Accessories = () => {
     }
 
     return (
-        <div className="accessories">
-            <BannerFullWidth url={'https://lh3.googleusercontent.com/PTmjbvvVBgZDWbhsG2eQZERHJb4ghvWOQeDUG9q0KS0AKb4sQTsVWerwFSrx-EHermUJQafUBdtfZBQMpl4bVnRZTQQdTB7F=w1232-rw'} />
-            <ContainerProduct title="Dành cho bạn">
-                {productItem}
-            </ContainerProduct>
-        </div>
+        <Fragment>
+            <Toolbar isShowToolbar />
+            <div className="accessories">
+                <BannerFullWidth url={'https://lh3.googleusercontent.com/PTmjbvvVBgZDWbhsG2eQZERHJb4ghvWOQeDUG9q0KS0AKb4sQTsVWerwFSrx-EHermUJQafUBdtfZBQMpl4bVnRZTQQdTB7F=w1232-rw'} />
+                <ContainerProduct title="Dành cho bạn">
+                    {productItem}
+                </ContainerProduct>
+            </div>
+        </Fragment>
     )
 }
 
-export default Accessories
+const mapStateToProps = state => {
+    return {
+        dataAccessories: state.DataReducer.rootData
+    }
+}
+
+export default connect(mapStateToProps, null)(Accessories)

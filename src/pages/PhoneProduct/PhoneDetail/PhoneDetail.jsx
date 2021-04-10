@@ -7,21 +7,19 @@ import CartProductBigSize from '../../../components/CardProduct/CardProductBigSi
 import ContainerProduct from '../../../components/ContainerProduct/ContainerProduct'
 import ProductName from '../../ProductDetail/ProductName/ProductName'
 import ShowDetail from '../../ProductDetail/ShowDetail/ShowDetail'
+import { connect } from 'react-redux'
+import Toolbar from '../../../container/Header/Toolbar/Toolbar'
 
 const PhoneDetail = (props) => {
     const [loadProduct, setLoadProduct] = useState(null)
-    const [data, setData] = useState(null)
+
+    const data = props.dataPhone.filter(product => product.idCategory === 'phone03')
+        .slice(0, 5)
 
     useEffect(() => {
-        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/phone/' + props.match.params.id + '.json')
+        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/products/' + props.match.params.id + '.json')
             .then(res => {
-                const dataRender = res.data
-                setLoadProduct(dataRender)
-            })
-        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/phone.json')
-            .then(res => {
-                const cutArr = res.data.slice(0, 5);
-                setData(cutArr)
+                setLoadProduct(res.data)
             })
     }, [loadProduct])
 
@@ -30,12 +28,14 @@ const PhoneDetail = (props) => {
             <p className="loader"></p>
         </div>
 
+
     if (loadProduct) {
         productDetail = (
             <Fragment>
                 <ProductName nameProduct={loadProduct.name} />
                 <div className="productDetail-page">
                     <ShowDetail
+                        idProduct={loadProduct.id}
                         name={loadProduct.name}
                         image={loadProduct.image}
                         imageFull={loadProduct.imageFull}
@@ -52,7 +52,6 @@ const PhoneDetail = (props) => {
                 return (
                     <Link to={`/phoneDetail/${product.id}`} key={product.id}>
                         <CartProductBigSize
-                            key={product.id}
                             url={product.image}
                             name={product.name}
                             price={product.price}
@@ -65,13 +64,22 @@ const PhoneDetail = (props) => {
     }
 
     return (
-        <div className="productDetail-page-wrap">
-            {productDetail}
-            <ContainerProduct title="Sản phẩm liên quan">
-                {productItem}
-            </ContainerProduct>
-        </div>
+        <Fragment>
+            <Toolbar isShowToolbar />
+            <div className="productDetail-page-wrap">
+                {productDetail}
+                <ContainerProduct title="Sản phẩm liên quan">
+                    {productItem}
+                </ContainerProduct>
+            </div>
+        </Fragment>
     )
 }
 
-export default PhoneDetail
+const mapStateToProps = state => {
+    return {
+        dataPhone: state.DataReducer.rootData
+    }
+}
+
+export default connect(mapStateToProps, null)(PhoneDetail)

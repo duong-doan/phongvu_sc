@@ -24,16 +24,6 @@
         justify-content: space-between;
         z-index: 20;
 
-        a {
-            color: $text-main-color-2;
-            width: 8%;
-            background-color: transparent !important;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
-
         h4 {
             font-size: 2rem;
             color: $text-white-color;

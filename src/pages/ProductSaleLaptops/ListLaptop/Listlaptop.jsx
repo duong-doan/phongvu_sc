@@ -1,19 +1,14 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { Fragment } from 'react'
+import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-
-import './Listlaptop.scss'
 import CartProductBigSize from '../../../components/CardProduct/CardProductBigSize/CardProductBigSize'
 import ContainerProduct from '../../../components/ContainerProduct/ContainerProduct'
+import Toolbar from '../../../container/Header/Toolbar/Toolbar'
+import './Listlaptop.scss'
 
-const Listlaptop = () => {
-    const [dataListLaptop, setDataListLaptop] = useState(null)
-    useEffect(() => {
-        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/laptops.json')
-            .then(res => {
-                setDataListLaptop(res.data)
-            })
-    }, [])
+
+const Listlaptop = (props) => {
+    const dataListLaptop = props.dataLap.filter(product => product.idCategory === 'lap00')
 
     let listLaptop = <div style={{ height: '200px', width: '90%', margin: 'auto' }}>
         <p className="loader"></p>
@@ -22,9 +17,8 @@ const Listlaptop = () => {
     if (dataListLaptop) {
         listLaptop = (
             dataListLaptop.map(product => {
-                return <Link to={`/productDetail/${product.id}`}>
+                return <Link to={`/productDetail/${product.id}`} key={product.id}>
                     <CartProductBigSize
-                        key={product.id}
                         url={product.image}
                         name={product.name}
                         price={product.price}
@@ -36,12 +30,21 @@ const Listlaptop = () => {
     }
 
     return (
-        <div className="listLaptop">
-            <ContainerProduct title="Dành cho bạn" >
-                {listLaptop}
-            </ContainerProduct>
-        </div>
+        <Fragment>
+            <Toolbar isShowToolbar />
+            <div className="listLaptop">
+                <ContainerProduct title="Dành cho bạn" >
+                    {listLaptop}
+                </ContainerProduct>
+            </div>
+        </Fragment>
     )
 }
 
-export default Listlaptop
+const mapStateToProps = state => {
+    return {
+        dataLap: state.DataReducer.rootData
+    }
+}
+
+export default connect(mapStateToProps, null)(Listlaptop)

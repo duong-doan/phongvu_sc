@@ -25,6 +25,7 @@ const Login = () => {
         })
     }, [])
 
+
     return (
         <div id="logreg-forms" >
             <form className="form-signin">
@@ -33,7 +34,7 @@ const Login = () => {
                 <div className="social-login">
                     <button className="btn facebook-btn social-btn" type="button">
                         <span>
-                            <i class="fab fa-facebook-f "></i>
+                            <i className="fab fa-facebook-f "></i>
                             Sign in with Facebook
                             </span>
                     </button>

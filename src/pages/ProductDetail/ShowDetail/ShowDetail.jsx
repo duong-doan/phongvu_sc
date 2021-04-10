@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
+import { connect } from 'react-redux';
+import * as TypeActions from '../../../constant/TypeActions'
 
 import './ShowDetail.scss'
 import ButtonContact from '../../../components/UI/buttonContact/ButtonContact'
@@ -21,6 +23,11 @@ const ShowDetail = (props) => {
         }
     })
 
+    const handleAddCart = (idProduct) => {
+        props.onAddCart(props.data[idProduct])
+        window.alert('Thêm vào giỏ hàng thành công :D')
+    }
+
     let imgDetail = <p>loading</p>
     if (props.imageFull) {
         imgDetail = (
@@ -39,11 +46,14 @@ const ShowDetail = (props) => {
             </div>
             <div className="show__info">
                 <h3>{props.name}</h3>
-                <p>Thương hiệu <span className="show__info--brand">ASUS</span></p>
+                <p>Thương hiệu <span className="show__info--brand">{props.brand}</span></p>
                 <p>SKU: 19060290</p>
-                <span className="show__info--onlyLeft">Chỉ còn 0 sản phẩm</span><br />
+                <span className="show__info--onlyLeft">Chỉ còn 1 sản phẩm</span><br />
                 <span className="show__info--price">{props.price}</span>
-                <ButtonContact show />
+                <ButtonContact
+                    show
+                    addCart={() => handleAddCart(props.idProduct)}
+                />
 
                 <div style={{
                     borderTop: "1px dashed #999",
@@ -61,4 +71,17 @@ const ShowDetail = (props) => {
     )
 }
 
-export default ShowDetail
+const mapStateToProps = state => {
+    return {
+        data: state.DataReducer.rootData,
+        cart: state.CartReducer.cart
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onAddCart: (productItem) => dispatch({ type: TypeActions.ADD_CART, product: productItem })
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ShowDetail)

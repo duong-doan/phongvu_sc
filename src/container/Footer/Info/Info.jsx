@@ -36,22 +36,22 @@ const Info = () => {
             <ul className="footer__list-social">
                 <h4>Cộng đồng Phong Vũ</h4>
                 <li className="list-social-itemLink">
-                    <i class="fab fa-facebook-square" style={{ color: 'blue' }}></i>
+                    <i className="fab fa-facebook-square" style={{ color: 'blue' }}></i>
                     Phong Vũ Việt Nam</li>
                 <li className="list-social-itemLink">
-                    <i class="fab fa-youtube" style={{ color: 'red' }}></i>
+                    <i className="fab fa-youtube" style={{ color: 'red' }}></i>
                     Phong Vũ Media</li>
                 <li className="list-social-itemLink">
-                    <i class="fas fa-user-friends" style={{ color: 'blueviolet' }}></i>
+                    <i className="fas fa-user-friends" style={{ color: 'blueviolet' }}></i>
                     Phong Vũ Hội</li>
                 <li className="list-social-itemLink">
-                    <i class="fas fa-phone-alt" style={{ color: 'orange' }}></i>
+                    <i className="fas fa-phone-alt" style={{ color: 'orange' }}></i>
                     Gọi Mua hàng: 1800 6867 (miễn phí)</li>
                 <li className="list-social-itemLink">
-                    <i class="fas fa-phone-alt" style={{ color: 'orange' }}></i>
+                    <i className="fas fa-phone-alt" style={{ color: 'orange' }}></i>
                     Gọi Chăm sóc: 1800 6865 (miễn phí)</li>
                 <li className="list-social-itemLink">
-                    <i class="far fa-comments" style={{ color: 'orange' }}></i>
+                    <i className="far fa-comments" style={{ color: 'orange' }}></i>
                     Chat với tư vấn viên</li>
             </ul>
 

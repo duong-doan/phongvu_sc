@@ -8,7 +8,7 @@ const ProductName = (props) => {
             <div className="wrap__icon">
                 <i className="fas fa-home"></i>
             </div>
-            <i class="fas fa-arrow-right"></i>
+            <i className="fas fa-arrow-right"></i>
             <div className="wrap__nameProduct">
                 <span>{props.nameProduct}</span>
             </div>

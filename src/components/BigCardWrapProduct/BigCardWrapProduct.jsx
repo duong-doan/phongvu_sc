@@ -9,6 +9,7 @@ const BigCardWrapProduct = (props) => {
         productSmall = (
             props.dataCardSmall.map(product => {
                 return <CardProductSmall
+                    key={product}
                     name={product.name}
                     subTitle={product.subTitle}
                     urlImg={product.urlImg} />

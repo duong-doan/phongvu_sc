@@ -1,13 +1,15 @@
 import React, { useEffect, Fragment } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { pushData, pushDataAction } from './actions/PushDataAction'
 
 import './App.scss';
 import Footer from './container/Footer/Footer';
 import Header from './container/Header/Header';
 import Accessories from './pages/Accessories/Accessories';
 import HomePage from './pages/Home/HomePage';
-import Login from './pages/Login/Login';
+// import Login from './pages/Login/Login';
 import PhoneProduct from './pages/PhoneProduct/PhoneProduct';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
 import ProductSaleLaptops from './pages/ProductSaleLaptops/ProductSaleLaptops';
@@ -17,9 +19,20 @@ import PhoneDetail from './pages/PhoneProduct/PhoneDetail/PhoneDetail';
 import AccDetail from './pages/Accessories/AccDetail/AccDetail';
 import HousewearDetail from './pages/Housewear/HousewearDetail/HousewearDetail';
 import Listlaptop from './pages/ProductSaleLaptops/ListLaptop/Listlaptop';
+import TestLogin from './pages/Login/TestLogin';
+import Cart from './pages/Cart/Cart';
+import Search from './pages/Search/Search';
 
+const App = ({ onPushData }) => {
 
-const App = (props) => {
+  useEffect(() => {
+    axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/.json')
+      .then(res => {
+        onPushData(res.data)
+      }).catch(e => {
+        console.log('err', e)
+      })
+  }, [])
 
   return (
     <div className="app">
@@ -28,7 +41,8 @@ const App = (props) => {
         <Switch>
 
           <Route path="/" exact component={HomePage} />
-          <Route path="/login" exact component={Login} />
+          {/* <Route path="/login" exact component={Login} /> */}
+          <Route path="/testLogin" exact component={TestLogin} />
 
           <Route path="/listLaptop" exact component={Listlaptop} />
           <Route path="/productSaleLaptops" exact component={ProductSaleLaptops} />
@@ -43,6 +57,10 @@ const App = (props) => {
 
           <Route path="/housewear" component={Housewear} />
           <Route path="/housewearDetail/:id" exact component={HousewearDetail} />
+
+          <Route path="/cart" exact component={Cart} />
+
+          <Route path="/search" exact component={Search} />
         </Switch>
       </ScrollToTop >
       <Footer />
@@ -50,8 +68,11 @@ const App = (props) => {
   )
 }
 
-export default App;
-
+const mapDispatchToProps = dispatch => {
+  return {
+    onPushData: (data) => dispatch(pushDataAction(data))
+  }
+}
 const ScrollToTop = withRouter(({ history, children }) => {
   useEffect(() => {
     const unlisten = history.listen(() => {
@@ -63,4 +84,9 @@ const ScrollToTop = withRouter(({ history, children }) => {
   }, []);
 
   return <Fragment>{children}</Fragment>;
-})
+});
+
+
+export default connect(null, mapDispatchToProps)(App);
+
+

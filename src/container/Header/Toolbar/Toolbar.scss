@@ -3,12 +3,13 @@
 .header__toolbar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 5rem;
     height: 100px;
     width: 100%;
 
     background-color: white;
+    box-shadow: 8px 0 8px rgba($color: #000000, $alpha: 0.2);
 
     .header__toolbar__logo {
         width: 20%;
@@ -17,47 +18,58 @@
             display: none;
         }
 
-        img {
-            object-fit: contain;
+        a {
+            width: 100%;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
         }
     }
 
     .header__toolbar__search {
         width: 42%;
         position: relative;
-
-        input {
+        form {
             width: 100%;
-            font-size: 1.4rem;
-            padding: 0.8rem 1rem;
-            outline: none;
-            border-radius: 8px;
-            border: 1px solid rgb(211, 210, 210);
-            background-color: rgb(241, 241, 241);
-        }
 
-        ::placeholder {
-            font-size: 1.5rem;
-            color: $text-sub-color;
-        }
+            input {
+                width: 100%;
+                font-size: 1.4rem;
+                padding: 0.8rem 1rem;
+                outline: none;
+                border-radius: 8px;
+                border: 1px solid rgb(211, 210, 210);
+                background-color: rgb(241, 241, 241);
+            }
 
-        .toolbar__search-wrap {
-            position: absolute;
-            top: 2px;
-            right: 2px;
+            ::placeholder {
+                font-size: 1.5rem;
+                color: $text-sub-color;
+            }
 
-            width: 36px;
-            height: 90%;
-            border-radius: 8px;
-            background-color: $primary-color;
-
-            i {
+            a {
                 position: absolute;
-                top: 50%;
-                right: 18%;
-                transform: translate(-18%, -50%);
-                font-size: 1.6rem;
-                color: rgb(255, 255, 255);
+                top: 10px;
+                right: 2px;
+
+                width: 36px;
+                height: 80%;
+                border-radius: 8px;
+                background-color: $primary-color;
+                .toolbar__search-wrap {
+                    background-color: transparent;
+                    border: none;
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        right: 18%;
+                        transform: translate(-18%, -50%);
+                        font-size: 1.6rem;
+                        color: rgb(255, 255, 255);
+                    }
+                }
             }
         }
     }

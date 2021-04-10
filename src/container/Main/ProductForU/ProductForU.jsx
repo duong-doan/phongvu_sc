@@ -1,32 +1,17 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { connect } from 'react-redux';
 
 import './ProductForU.scss'
 import CartProductBigSize from '../../../components/CardProduct/CardProductBigSize/CardProductBigSize'
-import db from '../../../db.json';
 import ContainerProduct from '../../../components/ContainerProduct/ContainerProduct';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
 
-const ProductForU = () => {
+const ProductForU = React.memo(({ dataProductForU }) => {
 
-    const [dataLap, setDataLap] = useState(null)
-    const [dataPhone, setDataPhone] = useState(null)
-    const [dataHouse, setDataHouse] = useState(null)
-
-    useEffect(() => {
-        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/laptops.json')
-            .then(res => {
-                setDataLap(res.data)
-            })
-        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/phone.json')
-            .then(res => {
-                setDataPhone(res.data)
-            })
-        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/housewear.json')
-            .then(res => {
-                setDataHouse(res.data)
-            })
-    })
+    const dataLap = dataProductForU.filter(laptop => laptop.idCategory === 'lap00')
+    const dataPhone = dataProductForU.filter(laptop => laptop.idCategory === 'house02')
+    const dataHouse = dataProductForU.filter(laptop => laptop.idCategory === 'phone03')
 
     let containerProduct = <div style={{ height: '200px', width: '90%', margin: 'auto' }}>
         <p className="loader"></p>
@@ -37,9 +22,8 @@ const ProductForU = () => {
             <ContainerProduct title="Dành cho bạn">
                 {
                     dataLap.map(product => {
-                        return <Link to={`/productDetail/${product.id}`}>
+                        return <Link to={`/productDetail/${product.id}`} key={product.id}>
                             <CartProductBigSize
-                                key={product.id}
                                 url={product.image}
                                 name={product.name}
                                 price={product.price}
@@ -47,9 +31,8 @@ const ProductForU = () => {
                                 urlGift={product.gift} />
                         </Link>
                     }).concat(dataPhone.map(phone => {
-                        return <Link to={`/phoneDetail/${phone.id}`}>
+                        return <Link to={`/phoneDetail/${phone.id}`} key={phone.id}>
                             <CartProductBigSize
-                                key={phone.id}
                                 url={phone.image}
                                 name={phone.name}
                                 price={phone.price}
@@ -57,9 +40,8 @@ const ProductForU = () => {
                                 urlGift={phone.gift} />
                         </Link>
                     })).concat(dataHouse.map(housewear => {
-                        return <Link to={`/housewearDetail/${housewear.id}`}>
+                        return <Link to={`/housewearDetail/${housewear.id}`} key={housewear.id}>
                             <CartProductBigSize
-                                key={housewear.id}
                                 url={housewear.image}
                                 name={housewear.name}
                                 price={housewear.price}
@@ -74,6 +56,12 @@ const ProductForU = () => {
     }
 
     return containerProduct
+})
+
+const mapStateToProps = state => {
+    return {
+        dataProductForU: state.DataReducer.rootData
+    }
 }
 
-export default ProductForU
+export default connect(mapStateToProps, null)(ProductForU)

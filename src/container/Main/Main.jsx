@@ -20,7 +20,7 @@ const Main = (props) => {
     return (
         <div className="main">
             {/* Toolbar  */}
-            <Toolbar isShowToolbar />
+            <Toolbar isShowToolbar showSearch />
 
             {/* Banner wrap blow toolbar */}
             <Banner>
@@ -37,7 +37,7 @@ const Main = (props) => {
 
             {/* Banner promotion */}
             <Link to="/housewear" >
-                <BannerFullWidth url={ImgBannerFull1} />
+                <BannerFullWidth url="https://lh3.googleusercontent.com/_CGUSDQLhva8K007hq8GkX3v1EGq9PQDdw1YiU5uDwifFPPm0kIzNIzhXAUZv8RZ-ycvJ6YoZys1db-nckjKeQpOhFI_HQE=w1232-rw" />
             </Link>
 
             {/* Outstanding brand product */}

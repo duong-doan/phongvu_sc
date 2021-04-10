@@ -1,28 +1,24 @@
 import React, { Fragment, useEffect, useState } from 'react'
-import ContainerProduct from '../../components/ContainerProduct/ContainerProduct'
+import axios from 'axios'
+import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
 import './ProductDetail.scss'
+import Toolbar from '../../container/Header/Toolbar/Toolbar'
+import ContainerProduct from '../../components/ContainerProduct/ContainerProduct'
 import ProductName from './ProductName/ProductName'
 import ShowDetail from './ShowDetail/ShowDetail'
 import CartProductBigSize from '../../components/CardProduct/CardProductBigSize/CardProductBigSize'
-import axios from 'axios'
-import { Link } from 'react-router-dom'
 
 const ProductDetail = (props) => {
     const [loadProduct, setLoadProduct] = useState(null)
-    const [data, setData] = useState(null)
-    // console.log(props.match.params.id);
+    const data = props.dataLap.filter(product => product.idCategory === 'lap00')
+        .slice(0, 5)
+
     useEffect(() => {
-        console.log(props);
-        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/laptops/' + props.match.params.id + '.json')
+        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/products/' + props.match.params.id + '.json')
             .then(res => {
-                const dataRender = res.data
-                setLoadProduct(dataRender)
-            })
-        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/laptops.json')
-            .then(res => {
-                const cutArr = res.data.slice(0, 5);
-                setData(cutArr)
+                setLoadProduct(res.data)
             })
     }, [loadProduct])
 
@@ -37,10 +33,12 @@ const ProductDetail = (props) => {
                 <ProductName nameProduct={loadProduct.name} />
                 <div className="productDetail-page">
                     <ShowDetail
+                        idProduct={loadProduct.id}
                         name={loadProduct.name}
                         image={loadProduct.image}
                         imageFull={loadProduct.imageFull}
-                        price={loadProduct.price} />
+                        price={loadProduct.price}
+                        brand={loadProduct.brand} />
                 </div>
             </Fragment>
         )
@@ -53,7 +51,6 @@ const ProductDetail = (props) => {
                 return (
                     <Link to={`/productDetail/${product.id}`} key={product.id}>
                         <CartProductBigSize
-                            key={product.id}
                             url={product.image}
                             name={product.name}
                             price={product.price}
@@ -66,13 +63,22 @@ const ProductDetail = (props) => {
     }
 
     return (
-        <div className="productDetail-page-wrap">
-            {productDetail}
-            <ContainerProduct title="Sản phẩm liên quan">
-                {productItem}
-            </ContainerProduct>
-        </div>
+        <Fragment>
+            <Toolbar isShowToolbar />
+            <div className="productDetail-page-wrap">
+                {productDetail}
+                <ContainerProduct title="Sản phẩm liên quan">
+                    {productItem}
+                </ContainerProduct>
+            </div>
+        </Fragment>
     )
 }
 
-export default ProductDetail
+const mapStateToProps = state => {
+    return {
+        dataLap: state.DataReducer.rootData
+    }
+}
+
+export default connect(mapStateToProps, null)(ProductDetail)

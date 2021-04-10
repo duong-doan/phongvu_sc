@@ -4,18 +4,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import CartProductBigSize from '../../../components/CardProduct/CardProductBigSize/CardProductBigSize';
 import './BestSellProduct.scss'
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import { connect } from 'react-redux';
 
-const BestSellProduct = () => {
-
-    const [dataLaptops, setDataLaptops] = useState(null)
-
-    useEffect(() => {
-        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/laptops.json')
-            .then(res => {
-                setDataLaptops(res.data)
-            })
-    }, [])
+const BestSellProduct = ({ dataBestSell }) => {
 
     let arr1 = <div style={{ height: '200px', width: '90%', margin: 'auto' }}>
         <p className="loader"></p>
@@ -24,11 +15,10 @@ const BestSellProduct = () => {
         <p className="loader"></p>
     </div>
 
-    if (dataLaptops) {
-        arr1 = dataLaptops.slice(1, 6).map(product => {
-            return <Link to={`/productDetail/${product.id}`}>
+    if (dataBestSell) {
+        arr1 = dataBestSell.slice(1, 6).map(product => {
+            return <Link to={`/productDetail/${product.id}`} key={product.id}>
                 <CartProductBigSize
-                    key={product.id}
                     url={product.image}
                     name={product.name}
                     price={product.price}
@@ -36,10 +26,10 @@ const BestSellProduct = () => {
                     urlGift={product.gift} />
             </Link>
         })
-        arr2 = dataLaptops.slice(6, 11).map(product => {
-            return <Link to={`/productDetail/${product.id}`}>
+
+        arr2 = dataBestSell.slice(6, 11).map(product => {
+            return <Link to={`/productDetail/${product.id}`} key={product.id}>
                 <CartProductBigSize
-                    key={product.id}
                     url={product.image}
                     name={product.name}
                     price={product.price}
@@ -57,7 +47,7 @@ const BestSellProduct = () => {
                     <p>Xem tất cả <i className="fas fa-chevron-right"></i></p>
                 </Link>
             </div>
-            <Carousel interval={10000}>
+            <Carousel interval={100000} indicators={false} >
                 <Carousel.Item>
                     <div className="besSellProduct-wrap-product">
                         {arr1}
@@ -70,9 +60,13 @@ const BestSellProduct = () => {
                 </Carousel.Item>
             </Carousel>
         </div>
-
-
     )
 }
 
-export default BestSellProduct
+const mapStateToProps = state => {
+    return {
+        dataBestSell: state.DataReducer.rootData
+    }
+}
+
+export default connect(mapStateToProps, null)(BestSellProduct)

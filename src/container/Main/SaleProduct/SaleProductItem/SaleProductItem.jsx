@@ -1,26 +1,23 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import './SaleProductItem.scss'
 
-import db from '../../../../db.json';
 import CardProductBigSize from '../../../../components/CardProduct/CardProductBigSize/CardProductBigSize';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
 
-const SaleproductItem = (props) => {
+const SaleproductItem = React.memo(({ dataSaleProductLaptop }) => {
 
-    const [data, setData] = useState(null)
+    const data = dataSaleProductLaptop
+        .filter(laptop => laptop.idCategory === 'lap00')
+        .slice(0, 4)
 
-    useEffect(() => {
-        axios.get('https://phongvu-4eee2-default-rtdb.firebaseio.com/laptops.json')
-            .then(res => {
-                const cutArr = res.data.slice(0, 4)
-                setData(cutArr)
-            })
-    }, [])
-
-    let productItem = <div style={{ height: '200px', width: '90%', margin: 'auto' }}>
-        <p className="loader"></p>
-    </div>
+    let productItem =
+        <div style={{ height: '200px' }}>
+            <p className="loader" style={{
+                right: '500px',
+                bottom: '130px',
+            }}></p>
+        </div>
 
     if (data) {
         productItem = (
@@ -45,6 +42,12 @@ const SaleproductItem = (props) => {
             {productItem}
         </div>
     )
+})
+
+const mapStateToProps = state => {
+    return {
+        dataSaleProductLaptop: state.DataReducer.rootData
+    }
 }
 
-export default SaleproductItem
+export default connect(mapStateToProps, null)(SaleproductItem)

@@ -11,7 +11,6 @@ const SaleProduct = () => {
 
     const handleClickedBtn = (value) => {
         setClickedBtn(value)
-        console.log(value);
     }
 
     return (
