@@ -4,4 +4,5 @@ export const PUSH_DATA_SEARCH = "PUSH_DATA_SEARCH";
 export const DELETE_PRODUCT = "DELETE_PRODUCT";
 export const INCREASE = "INCREASE";
 export const DECREASE = "DECREASE";
-export const VALUE_SEARCH = "VALUE_SEARCH"
+export const VALUE_SEARCH = "VALUE_SEARCH";
+export const GG_LOGIN = "GG_LOGIN";

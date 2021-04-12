@@ -27,9 +27,7 @@ const ProductDetail = (props) => {
             <p className="loader"></p>
         </div>
 
-    function format(n) {
-        return n.toLocaleString().replace('.', '.').replace(/\d{3}(?=(\d{3})*,)/g)
-    }
+
 
     if (loadProduct) {
         productDetail = (

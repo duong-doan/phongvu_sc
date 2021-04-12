@@ -1,6 +1,5 @@
 /* sign in FORM */
 #logreg-forms {
-    // width: 412px;
     width: 40%;
     margin: 10vh auto;
     background-color: #f3f3f3;
@@ -37,109 +36,19 @@
     flex-direction: column;
     margin-bottom: 14px;
 
-    .social-btn {
-        width: 50%;
+    .gg-btn {
         margin: auto;
-        font-weight: 500;
-        color: white;
-        font-size: 0.9rem;
-        padding: 8px;
-
+        width: 50%;
+        div {
+            width: 10%;
+        }
         span {
-            font-size: 1.6rem;
-            i {
-                font-size: 1.6rem;
-                margin-right: 10px;
-            }
+            width: 72%;
+            font-size: 1.4rem;
         }
     }
-    .facebook-btn {
-        background-color: #3c589c;
-    }
-    .google-btn {
-        background-color: #df4b3b;
-    }
 }
 
-#logreg-forms a {
-    font-size: 1.6rem;
-    display: block;
-    padding-top: 10px;
-    color: lightseagreen;
-}
-
-#logreg-form .lines {
-    width: 200px;
-    border: 1px solid red;
-}
-
-#logreg-forms button[type="submit"] {
-    margin-top: 10px;
-    font-size: 1.6rem;
-
-    i {
-        font-size: 1.6rem;
-        margin-right: 4px;
-    }
-}
-
-button[type="button"] {
-    font-size: 1.6rem;
-
-    i {
-        font-size: 1.6rem;
-        margin-right: 4px;
-    }
-}
-
-#logreg-forms .form-reset,
-#logreg-forms .form-signup {
-    display: none;
-}
-
-#logreg-forms .form-signup .social-btn {
-    width: 210px;
-}
-
-#logreg-forms .form-signup input {
-    margin-bottom: 2px;
-}
-
-.form-signup .social-login {
-    width: 210px !important;
-    margin: 0 auto;
-}
-
-/* Mobile */
-
-@media screen and (max-width: 500px) {
-    #logreg-forms {
-        width: 300px;
-    }
-
-    #logreg-forms .social-login {
-        width: 200px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
-    #logreg-forms .social-btn {
-        font-size: 1.3rem;
-        font-weight: 100;
-        color: white;
-        width: 200px;
-        height: 56px;
-    }
-    #logreg-forms .social-btn:nth-child(1) {
-        margin-bottom: 5px;
-    }
-    #logreg-forms .social-btn span {
-        display: none;
-    }
-    #logreg-forms .facebook-btn:after {
-        content: "Facebook";
-    }
-
-    #logreg-forms .google-btn:after {
-        content: "Google+";
-    }
+.btn-success {
+    font-size: 1.4rem;
 }

@@ -1,28 +1,27 @@
-import React, { useEffect, Fragment } from 'react';
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
+import React, { Fragment, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { pushData, pushDataAction } from './actions/PushDataAction'
-
+import { Route, Switch, withRouter } from 'react-router-dom';
+import { pushDataAction } from './actions/PushDataAction';
 import './App.scss';
+
 import Footer from './container/Footer/Footer';
 import Header from './container/Header/Header';
+import AccDetail from './pages/Accessories/AccDetail/AccDetail';
 import Accessories from './pages/Accessories/Accessories';
+import Cart from './pages/Cart/Cart';
 import HomePage from './pages/Home/HomePage';
-// import Login from './pages/Login/Login';
-import PhoneProduct from './pages/PhoneProduct/PhoneProduct';
-import ProductDetail from './pages/ProductDetail/ProductDetail';
-import ProductSaleLaptops from './pages/ProductSaleLaptops/ProductSaleLaptops';
 import Housewear from './pages/Housewear/Housewear';
+import HousewearDetail from './pages/Housewear/HousewearDetail/HousewearDetail';
+import Login from './pages/Login/Login';
 import ListPhonePage from './pages/PhoneProduct/ListPhonePage/ListPhonePage';
 import PhoneDetail from './pages/PhoneProduct/PhoneDetail/PhoneDetail';
-import AccDetail from './pages/Accessories/AccDetail/AccDetail';
-import HousewearDetail from './pages/Housewear/HousewearDetail/HousewearDetail';
+import PhoneProduct from './pages/PhoneProduct/PhoneProduct';
+import ProductDetail from './pages/ProductDetail/ProductDetail';
 import Listlaptop from './pages/ProductSaleLaptops/ListLaptop/Listlaptop';
-import TestLogin from './pages/Login/TestLogin';
-import Cart from './pages/Cart/Cart';
+import ProductSaleLaptops from './pages/ProductSaleLaptops/ProductSaleLaptops';
 import Search from './pages/Search/Search';
-import Login from './pages/Login/Login';
+
 
 const App = ({ onPushData }) => {
 
@@ -43,7 +42,6 @@ const App = ({ onPushData }) => {
 
           <Route path="/" exact component={HomePage} />
           <Route path="/login" exact component={Login} />
-          {/* <Route path="/testLogin" exact component={Login} /> */}
 
           <Route path="/listLaptop" exact component={Listlaptop} />
           <Route path="/productSaleLaptops" exact component={ProductSaleLaptops} />
