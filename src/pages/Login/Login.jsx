@@ -32,19 +32,13 @@ const Login = () => {
                 <h1 className="h1 mb-3 " style={{ textAlign: 'center' }}>
                     Sign in</h1>
                 <div className="social-login">
-                    <button className="btn facebook-btn social-btn" type="button">
+                    <button className="btn google-btn social-btn" type="button">
                         <span>
-                            <i className="fab fa-facebook-f "></i>
-                            Sign in with Facebook
+                            <i className="fab fa-google"></i>
+                            Sign in with Google
                             </span>
                     </button>
                     <p style={{ textAlign: 'center', fontSize: '1.4rem', margin: '6px 0' }}>OR</p>
-                    <button className="btn google-btn social-btn" type="button">
-                        <span>
-                            <i className="fab fa-google-plus-g"></i>
-                            Sign in with Google+
-                            </span>
-                    </button>
                 </div>
                 <input
                     type="email"
@@ -61,15 +55,22 @@ const Login = () => {
                     placeholder="Password"
                     required=""
                 />
+                <input
+                    type="confirm-password"
+                    id="inputPassword"
+                    className="form-control"
+                    placeholder="Confirm password"
+                    required=""
+                />
 
                 <button className="btn btn-success btn-block" type="submit">
                     <i className="fas fa-sign-in-alt"></i> Sign in
                     </button>
-                <a href="#" id="forgot_pswd">Forgot password?</a>
+                {/* <a href="#" id="forgot_pswd">Forgot password?</a>
                 <hr />
                 <button className="btn btn-primary btn-block" type="button" id="btn-signup">
                     <i className="fas fa-user-plus"></i> Sign up New
-                </button>
+                </button> */}
             </form>
 
             <form action="/reset/password/" className="form-reset">

@@ -58,8 +58,11 @@
             width: 74%;
             display: flex;
             flex-wrap: wrap;
-            .card_product_big_size {
+            a {
                 width: 32%;
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
     }

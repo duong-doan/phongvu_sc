@@ -69,7 +69,7 @@ const Toolbar = ({ dataProduct, isShowToolbar, showSearch, pushDataSearch }) => 
                     </div>
                 </Link>
 
-                <Link to='/testLogin'>
+                <Link to='/login'>
                     <div className="toolbar__item-login">
                         <i className="far fa-user-circle"></i>
                         <span className="toolbar__item-title">Đăng nhập</span>

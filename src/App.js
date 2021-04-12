@@ -22,6 +22,7 @@ import Listlaptop from './pages/ProductSaleLaptops/ListLaptop/Listlaptop';
 import TestLogin from './pages/Login/TestLogin';
 import Cart from './pages/Cart/Cart';
 import Search from './pages/Search/Search';
+import Login from './pages/Login/Login';
 
 const App = ({ onPushData }) => {
 
@@ -41,8 +42,8 @@ const App = ({ onPushData }) => {
         <Switch>
 
           <Route path="/" exact component={HomePage} />
-          {/* <Route path="/login" exact component={Login} /> */}
-          <Route path="/testLogin" exact component={TestLogin} />
+          <Route path="/login" exact component={Login} />
+          {/* <Route path="/testLogin" exact component={Login} /> */}
 
           <Route path="/listLaptop" exact component={Listlaptop} />
           <Route path="/productSaleLaptops" exact component={ProductSaleLaptops} />

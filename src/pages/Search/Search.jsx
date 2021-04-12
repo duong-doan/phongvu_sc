@@ -5,6 +5,7 @@ import * as TypeActions from '../../constant/TypeActions';
 
 import CartProductBigSize from '../../components/CardProduct/CardProductBigSize/CardProductBigSize'
 import Toolbar from '../../container/Header/Toolbar/Toolbar'
+import { Link } from 'react-router-dom';
 
 const Search = ({ dataSearch, onValueSearch, dataFilter }) => {
   const [valueSearch, setValueSearch] = useState({
@@ -25,9 +26,7 @@ const Search = ({ dataSearch, onValueSearch, dataFilter }) => {
   const handleSubmitForm = (e) => {
     e.preventDefault();
     onValueSearch(valueSearch)
-    if (dataFilter) {
-      data = dataFilter
-    }
+    data = dataFilter
   }
 
   let productCategory = null;
@@ -53,7 +52,6 @@ const Search = ({ dataSearch, onValueSearch, dataFilter }) => {
     productCategory = (
       <Fragment>
         <option value="panasonic">Panasonic</option>
-        <option value="hafele">Hafele</option>
         <option value="hafele">Hafele</option>
         <option value="philips">Philips</option>
         <option value="toshiba">Toshiba</option>
@@ -86,7 +84,6 @@ const Search = ({ dataSearch, onValueSearch, dataFilter }) => {
                   <option value="laptop">Laptop</option>
                   <option value="housewear">Đồ gia dụng</option>
                   <option value="acc">Phụ kiện máy tính</option>
-                  <option value="cam">Camera</option>
                 </select>
               </div>
 
@@ -126,14 +123,14 @@ const Search = ({ dataSearch, onValueSearch, dataFilter }) => {
             {
               data.length === 0 ? <p>k co san pham nao</p> : data.map(product => {
                 return (
-                  // <Link to={`/accDetail/${product.id}`} key={product.id}>
-                  <CartProductBigSize
-                    url={product.image}
-                    name={product.name}
-                    price={product.price}
-                    discountPrice={product.discountPrice}
-                    urlGift={product.gift} />
-                  // </Link>
+                  <Link to={`/productDetail/${product.id}`} key={product.id}>
+                    <CartProductBigSize
+                      url={product.image}
+                      name={product.name}
+                      price={product.price}
+                      discountPrice={product.discountPrice}
+                      urlGift={product.gift} />
+                  </Link>
                 )
               })
             }
