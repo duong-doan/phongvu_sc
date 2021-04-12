@@ -23,6 +23,10 @@ const ShowDetail = (props) => {
         }
     })
 
+    const format = (n) => {
+        return n.toLocaleString().replace('.', '.').replace(/\d{3}(?=(\d{3})*,)/g)
+    }
+
     const handleAddCart = (idProduct) => {
         props.onAddCart(props.data[idProduct])
         window.alert('Thêm vào giỏ hàng thành công :D')
@@ -49,7 +53,7 @@ const ShowDetail = (props) => {
                 <p>Thương hiệu <span className="show__info--brand">{props.brand}</span></p>
                 <p>SKU: 19060290</p>
                 <span className="show__info--onlyLeft">Chỉ còn 1 sản phẩm</span><br />
-                <span className="show__info--price">{props.price}</span>
+                <span className="show__info--price">{format(props.price)}đ</span>
                 <ButtonContact
                     show
                     addCart={() => handleAddCart(props.idProduct)}

@@ -3,6 +3,10 @@ import { connect } from 'react-redux';
 import './CartItem.scss'
 
 const CartItem = ({ deleteProduct, image, name, price, increase, decrease, amount, cart }) => {
+    const format = (n) => {
+        return n.toLocaleString().replace('.', '.').replace(/\d{3}(?=(\d{3})*,)/g)
+    }
+
     return (
         <div className="cartPage__productItem">
             <img src={image} alt="" />
@@ -13,7 +17,7 @@ const CartItem = ({ deleteProduct, image, name, price, increase, decrease, amoun
                 <button className="interactive--increase" onClick={increase}>+</button>
                 <button className="fas fa-trash-alt" onClick={deleteProduct}></button>
             </div>
-            <h5>{price}</h5>
+            <h5>{format(price)}đ</h5>
         </div>
     )
 }

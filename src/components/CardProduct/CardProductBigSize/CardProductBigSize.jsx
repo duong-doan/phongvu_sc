@@ -5,6 +5,10 @@ import ButtonContact from '../../UI/buttonContact/ButtonContact'
 import GiftCard from './GiftCard/GiftCard';
 
 const CartProductBigSize = (props) => {
+    function format(n) {
+        return n.toLocaleString().replace('.', '.').replace(/\d{3}(?=(\d{3})*,)/g)
+    }
+
     const [showBtn, setShowBtn] = useState(false)
     let price = null
     if (showBtn) {
@@ -13,11 +17,11 @@ const CartProductBigSize = (props) => {
         price = (
             <Fragment>
                 <div className="card_big_size-newPrice">
-                    <span className="newprice">{props.price}</span>
+                    <span className="newprice">{format(props.price)} đ</span>
                     <i className="fas fa-truck"></i>
                 </div>
                 <div className="card_big_size-oldPrice">
-                    <span className="oldPrice">{props.discountPrice}</span>
+                    <span className="oldPrice">{format(props.discountPrice)}đ</span>
                     <span className="discount_percent">{props.discount}</span>
                 </div>
                 <GiftCard url={props.urlGift} />

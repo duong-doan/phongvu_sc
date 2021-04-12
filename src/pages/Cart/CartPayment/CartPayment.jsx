@@ -4,7 +4,12 @@ import './CartPayment.scss'
 
 const CartPayment = ({ cart }) => {
 
+    const format = (n) => {
+        return n.toLocaleString().replace('.', '.').replace(/\d{3}(?=(\d{3})*,)/g)
+    }
+
     let totalPrice = 0;
+
     cart.map(item => {
         return totalPrice += item.price
     })
@@ -15,7 +20,7 @@ const CartPayment = ({ cart }) => {
             <table>
                 <tr>
                     <td className="payment__title">Tạm tính</td>
-                    <td className="payment__normal">{totalPrice} đ</td>
+                    <td className="payment__normal">{format(totalPrice)} đ</td>
                 </tr>
                 <tr>
                     <td className="payment__title">Phí vận chuyển</td>
@@ -27,7 +32,7 @@ const CartPayment = ({ cart }) => {
                 </tr>
                 <tr>
                     <td className="payment__title">Thành tiền</td>
-                    <td className="payment__total">{totalPrice} đ</td>
+                    <td className="payment__total">{format(totalPrice)} đ</td>
                 </tr>
             </table>
             <button className="btn__pay">Thanh toán</button>
