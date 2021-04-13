@@ -15,6 +15,8 @@ const loginReducer = (state = initState, action) => {
                 email: action.email
             })
 
+            localStorage.setItem('users', JSON.stringify(listUsers))
+
             return {
                 ...state,
                 users: listUsers

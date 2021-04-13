@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import './Login.scss';
 import GoogleLogin from 'react-google-login';
 import * as TypeActions from '../../constant/TypeActions';
@@ -7,10 +7,15 @@ import Toolbar from '../../container/Header/Toolbar/Toolbar';
 
 const Login = ({ onGgLogin }) => {
 
-    const resGoogle = (res) => {
-        onGgLogin(res.profileObj.name, res.profileObj.email)
-        document.location.href = 'http://localhost:3000/phongvu_app#/'
-    }
+    const getUserLocal = JSON.parse(localStorage.getItem('users'))
+
+    useEffect(() => {
+        if (getUserLocal) {
+            prompt(`Chào mừng ${getUserLocal[0].name} đến với Phong Vũ`)
+            // alert(`Chào mừng ${getUserLocal[0].name} đến với Phong Vũ`)
+            document.location.href = 'http://localhost:3000/phongvu_app#/'
+        }
+    })
 
     return (
         <Fragment>
@@ -24,8 +29,12 @@ const Login = ({ onGgLogin }) => {
                             className="gg-btn"
                             clientId="885688104318-bhnat07al4e18eimcv7mivjf0sl1k76n.apps.googleusercontent.com"
                             buttonText="Login"
-                            onSuccess={resGoogle}
-                            onFailure={resGoogle}
+                            onSuccess={(res) => {
+                                onGgLogin(res.profileObj.name, res.profileObj.email)
+                            }}
+                            onFailure={(res) => {
+                                onGgLogin(res.profileObj.name, res.profileObj.email)
+                            }}
                             cookiePolicy={'single_host_origin'}
                         />
                         <p style={{ textAlign: 'center', fontSize: '1.4rem', margin: '6px 0', fontWeight: '500ss' }}>OR</p>
@@ -62,10 +71,16 @@ const Login = ({ onGgLogin }) => {
     )
 }
 
+const mapStateToProps = state => {
+    return {
+        loginUser: state.LoginReducer.users
+    }
+}
+
 const mapDispatchToProps = dispatch => {
     return {
         onGgLogin: (name, email) => dispatch({ type: TypeActions.GG_LOGIN, name, email })
     }
 }
 
-export default connect(null, mapDispatchToProps)(Login)
+export default connect(mapStateToProps, mapDispatchToProps)(Login)
