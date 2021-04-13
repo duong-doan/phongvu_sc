@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { pushDataAction } from './actions/PushDataAction';
 import './App.scss';
+import Modal from './components/UI/Modal/Modal';
 
 import Footer from './container/Footer/Footer';
 import Header from './container/Header/Header';

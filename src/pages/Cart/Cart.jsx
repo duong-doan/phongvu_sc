@@ -39,6 +39,7 @@ const Cart = ({ onDeleteProduct, cart, onIncrease, onDecrease }) => {
 
   return (
     <Fragment>
+
       <Toolbar isShowToolbar />
       <div className="cartPage__wrap">
         <div className="cartPage">

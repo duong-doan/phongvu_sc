@@ -1,24 +1,44 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import './Login.scss';
 import GoogleLogin from 'react-google-login';
 import * as TypeActions from '../../constant/TypeActions';
 import { connect } from 'react-redux';
 import Toolbar from '../../container/Header/Toolbar/Toolbar';
+import ModalBackdrop from '../../components/UI/Modal/Modal';
 
 const Login = ({ onGgLogin }) => {
+    const [show, setShow] = useState(false);
+    const [modal, setModal] = useState('');
 
     const getUserLocal = JSON.parse(localStorage.getItem('users'))
 
+    const handleCloseModal = () => setShow(false);
+
+    const handleRightModal = () => {
+        document.location.href = 'http://localhost:3000/phongvu_app#/'
+    }
+
     useEffect(() => {
         if (getUserLocal) {
-            prompt(`Chào mừng ${getUserLocal[0].name} đến với Phong Vũ`)
-            // alert(`Chào mừng ${getUserLocal[0].name} đến với Phong Vũ`)
-            document.location.href = 'http://localhost:3000/phongvu_app#/'
+            setShow(true)
+            setModal(
+                <ModalBackdrop
+                    title={`Chào mừng ${getUserLocal[0].name} đến với Phong Vũ`}
+                    right="Click để tiếp tục"
+                    show={show}
+                    handleClose={handleCloseModal}
+                    handleRight={handleRightModal}
+                    displayLeft={{ display: 'none' }}
+                    displayRight={{ fontSize: '1.6rem' }}
+                    displayTitle={{ fontSize: '3rem' }}
+                    displayBody={{ fontSize: '1.4rem' }}
+                />
+            )
         }
     })
-
     return (
         <Fragment>
+            {modal}
             <Toolbar isShowToolbar />
             <div id="logreg-forms" >
                 <form className="form-signin">
