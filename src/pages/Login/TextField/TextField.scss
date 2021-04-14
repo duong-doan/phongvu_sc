@@ -1,0 +1,18 @@
+label {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.textField {
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    font-size: 1.4rem;
+}
+
+.error {
+    position: absolute;
+    color: rgb(238, 53, 53);
+    font-size: 1.2rem;
+}

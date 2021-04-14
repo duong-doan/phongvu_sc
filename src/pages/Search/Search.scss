@@ -21,6 +21,7 @@
             form {
                 .search__filter__wrap {
                     display: flex;
+                    justify-content: space-between;
                     margin-bottom: 16px;
 
                     label {
@@ -37,6 +38,7 @@
                     }
                 }
                 .btn-form {
+                    font-size: 2rem;
                     width: 100%;
                     height: 50px;
                     margin: auto;
@@ -66,4 +68,8 @@
             }
         }
     }
+}
+
+.img__empty {
+    margin: auto;
 }

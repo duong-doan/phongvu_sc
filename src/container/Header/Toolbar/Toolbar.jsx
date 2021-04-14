@@ -21,7 +21,6 @@ const Toolbar = ({ dataProduct, isShowToolbar, showSearch, pushDataSearch, login
   const getUserLocal = JSON.parse(localStorage.getItem('users'))
 
   const handleLogout = () => {
-    console.log(1);
     localStorage.removeItem('users')
     document.location.reload()
   }

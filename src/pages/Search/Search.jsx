@@ -121,18 +121,20 @@ const Search = ({ dataSearch, onValueSearch, dataFilter }) => {
 
           <div className="search__product">
             {
-              data.length === 0 ? <p>k co san pham nao</p> : data.map(product => {
-                return (
-                  <Link to={`/productDetail/${product.id}`} key={product.id}>
-                    <CartProductBigSize
-                      url={product.image}
-                      name={product.name}
-                      price={product.price}
-                      discountPrice={product.discountPrice}
-                      urlGift={product.gift} />
-                  </Link>
-                )
-              })
+              data.length === 0 ?
+                <img className="img__empty" src="https://i.imgur.com/Drj57qu.png" alt="" />
+                : data.map(product => {
+                  return (
+                    <Link to={`/productDetail/${product.id}`} key={product.id}>
+                      <CartProductBigSize
+                        url={product.image}
+                        name={product.name}
+                        price={product.price}
+                        discountPrice={product.discountPrice}
+                        urlGift={product.gift} />
+                    </Link>
+                  )
+                })
             }
           </div>
         </div>

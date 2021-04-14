@@ -21,6 +21,14 @@ const loginReducer = (state = initState, action) => {
                 ...state,
                 users: listUsers
             };
+        case TypeActions.REGISTER:
+            const userFormRegister = [...state.users]
+            userFormRegister.push(action.valueFormik)
+            localStorage.setItem('users', JSON.stringify(userFormRegister))
+            return {
+                ...state,
+                users: userFormRegister
+            }
 
         default:
             return state;
