@@ -7,10 +7,6 @@ const initState = {
 const searchReducer = (state = initState, action) => {
     switch (action.type) {
         case TypeActions.PUSH_DATA_SEARCH:
-            // const dataSearch = action.data.filter(product =>
-            //     product.name.toLowerCase().includes(`${action.valueInput}`)
-            // )
-
             return {
                 ...state,
                 dataProduct: action.data

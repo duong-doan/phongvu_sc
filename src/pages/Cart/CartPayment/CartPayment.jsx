@@ -57,11 +57,9 @@ const CartPayment = ({ cart, listUsers }) => {
 
     }
 
-    let totalPrice = 0;
-
-    cart.map(item => {
-        return totalPrice += item.price
-    })
+    const totalPrice = cart.reduce((acc, cur) => {
+        return acc + cur.price
+    }, 0)
 
     return (
         <Fragment>

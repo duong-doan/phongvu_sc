@@ -38,6 +38,7 @@ const ShowDetail = (props) => {
     }
 
     const handleRightModal = () => {
+        console.log(document.location.hostname);
         document.location.href = 'http://localhost:3000/phongvu_app#/cart'
     }
 

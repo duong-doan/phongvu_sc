@@ -12,7 +12,7 @@ const CartItem = ({ deleteProduct, image, name, price, increase, decrease, amoun
             <img src={image} alt="" />
             <h6>{name}</h6>
             <div className="productItem__interactive">
-                <button className="interactive--sub" disabled={amount <= 1 ? true : false} onClick={decrease}>-</button>
+                <button className="interactive--sub" disabled={amount === 1 ? true : false} onClick={decrease}>-</button>
                 <span className="interactive--count">{amount}</span>
                 <button className="interactive--increase" onClick={increase}>+</button>
                 <button className="fas fa-trash-alt" onClick={deleteProduct}></button>
