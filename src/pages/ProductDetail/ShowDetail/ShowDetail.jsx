@@ -34,12 +34,6 @@ const ShowDetail = (props) => {
     const handleAddCart = (idProduct) => {
         props.onAddCart(props.data[idProduct])
         setShow(true)
-        // window.alert('Thêm vào giỏ hàng thành công :D')
-    }
-
-    const handleRightModal = () => {
-        console.log(document.location.hostname);
-        document.location.href = 'http://localhost:3000/phongvu_app#/cart'
     }
 
     const handleCloseModal = () => {
@@ -64,9 +58,10 @@ const ShowDetail = (props) => {
                 left="Tiếp tục mua sắm"
                 right="Đến giỏ hàng"
                 handleClose={handleCloseModal}
-                handleRight={handleRightModal}
+                link="/cart"
                 handleLeft={handleCloseModal}
-                displayLeft={{ fontSize: '1.6rem' }}
+                displayFooter={{ textAlign: 'center' }}
+                displayLeft={{ fontSize: '1.6rem', width: 'fit-content' }}
                 displayRight={{ fontSize: '1.6rem' }}
                 displayTitle={{ fontSize: '3rem' }}
                 displayBody={{ fontSize: '1.4rem' }} />

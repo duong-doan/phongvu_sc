@@ -1,38 +1,35 @@
+import { Form, Formik } from 'formik';
 import React, { Fragment, useEffect, useState } from 'react';
-import * as TypeActions from '../../constant/TypeActions';
+import GoogleLogin from 'react-google-login';
 import { connect } from 'react-redux';
-import { FastField, Field, Form, Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-
+import * as TypeActions from '../../constant/TypeActions';
 
 import './Login.scss';
-import GoogleLogin from 'react-google-login';
-import Toolbar from '../../container/Header/Toolbar/Toolbar';
 import ModalBackdrop from '../../components/UI/Modal/Modal';
+import Toolbar from '../../container/Header/Toolbar/Toolbar';
 import TextField from './TextField/TextField';
 
-const Login = ({ onGgLogin, onRegister }) => {
+const Login = ({ onGgLogin, onRegister, cartItem }) => {
   const [show, setShow] = useState(false);
   const [modal, setModal] = useState('');
 
-  const getUserLocal = JSON.parse(localStorage.getItem('users'))
 
   const handleCloseModal = () => setShow(false);
 
-  const handleRightModal = () => {
-    document.location.href = 'http://localhost:3000/phongvu_app#/'
-  }
-
   useEffect(() => {
-    if (getUserLocal) {
+    const getUserLocal = JSON.parse(localStorage.getItem('users'))
+    if (getUserLocal.length === 0) {
+      return
+    } else {
       setShow(true)
       setModal(
         <ModalBackdrop
-          title={`Chào mừng ${getUserLocal[0].name} đến với Phong Vũ`}
+          title={`Chào mừng  đến với Phong Vũ`}
           right="Click để tiếp tục"
           show={show}
+          link="/"
           handleClose={handleCloseModal}
-          handleRight={handleRightModal}
           displayLeft={{ display: 'none' }}
           displayRight={{ fontSize: '1.6rem' }}
           displayTitle={{ fontSize: '3rem' }}
@@ -67,15 +64,15 @@ const Login = ({ onGgLogin, onRegister }) => {
         confirmPassword: ''
       }}
       onSubmit={(values) => {
-        onRegister(values)
+        onRegister(values, cartItem)
         setShow(true)
         setModal(
           <ModalBackdrop
             title={`Đăng kí tài khoản thành công, chào mừng bạn đến với Phong Vũ`}
             right="Click để tiếp tục"
             show={show}
+            link="/"
             handleClose={handleCloseModal}
-            handleRight={handleRightModal}
             displayLeft={{ display: 'none' }}
             displayRight={{ fontSize: '1.6rem' }}
             displayTitle={{ fontSize: '3rem' }}
@@ -85,7 +82,7 @@ const Login = ({ onGgLogin, onRegister }) => {
       }}
       validationSchema={validate}
     >
-      {formikProps => (
+      {() => (
         <Fragment>
           {modal}
           <Toolbar isShowToolbar />
@@ -99,10 +96,10 @@ const Login = ({ onGgLogin, onRegister }) => {
                   clientId="885688104318-bhnat07al4e18eimcv7mivjf0sl1k76n.apps.googleusercontent.com"
                   buttonText="Login"
                   onSuccess={(res) => {
-                    onGgLogin(res.profileObj.name, res.profileObj.email)
+                    onGgLogin(res.profileObj.name, res.profileObj.email, cartItem)
                   }}
                   onFailure={(res) => {
-                    onGgLogin(res.profileObj.name, res.profileObj.email)
+                    onGgLogin(res.profileObj.name, res.profileObj.email, cartItem)
                   }}
                   cookiePolicy={'single_host_origin'}
                 />
@@ -150,14 +147,15 @@ const Login = ({ onGgLogin, onRegister }) => {
 
 const mapStateToProps = state => {
   return {
-    loginUser: state.LoginReducer.users
+    loginUser: state.LoginReducer.users,
+    cartItem: state.CartReducer.cart
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    onGgLogin: (name, email, valueFormik) => dispatch({ type: TypeActions.GG_LOGIN, name, email, valueFormik }),
-    onRegister: (valueFormik) => dispatch({ type: TypeActions.REGISTER, valueFormik })
+    onGgLogin: (name, email, cartItem) => dispatch({ type: TypeActions.GG_LOGIN, name, email, cartItem }),
+    onRegister: (valueFormik, cartItem) => dispatch({ type: TypeActions.REGISTER, valueFormik, cartItem }),
   }
 }
 

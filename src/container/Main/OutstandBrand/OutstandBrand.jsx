@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 import './OutstandBrand.scss'
 
 import ProductItemAdsHorizontal from '../../../components/ProductItemAds/ProductitemAdsHorizontal/ProductItemAdsHorizontal'
-import brandMsi from '../../../assets/images/outstand_brand/brand-msi.webp'
-import brandHp from '../../../assets/images/outstand_brand/brand-hp.webp'
-import brandLg from '../../../assets/images/outstand_brand/brand-lg.webp'
-import brandLenovo from '../../../assets/images/outstand_brand/brand-lenovo.webp'
 
 const OutstandBrand = () => {
 

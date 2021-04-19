@@ -1,27 +1,15 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import * as TypeActions from '../../../constant/TypeActions'
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import * as TypeActions from '../../../constant/TypeActions';
 import './Toolbar.scss';
 
-import logo from '../../../assets/images/logo-full.svg';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-
-const Toolbar = ({ dataProduct, isShowToolbar, showSearch, pushDataSearch, loginUser }) => {
+const Toolbar = ({ dataProduct, isShowToolbar, showSearch, pushDataSearch }) => {
   const [value, setValue] = useState('')
-
-  let login = (
-    <Link to='/login'>
-      <div className="toolbar__item-login">
-        <i className="far fa-user-circle"></i>
-        <span className="toolbar__item-title">Đăng nhập</span>
-      </div>
-    </Link>
-  )
 
   const getUserLocal = JSON.parse(localStorage.getItem('users'))
 
   const handleLogout = () => {
-    localStorage.removeItem('users')
     document.location.reload()
   }
 
@@ -29,7 +17,6 @@ const Toolbar = ({ dataProduct, isShowToolbar, showSearch, pushDataSearch, login
     const loginEl = document.querySelector('.toolbar__item-login')
     const logoutEl = document.querySelector('.logout');
     if (loginEl && logoutEl) {
-
       loginEl.addEventListener('mouseover', () => {
         logoutEl.setAttribute('style', 'display: block;')
       })
@@ -38,38 +25,6 @@ const Toolbar = ({ dataProduct, isShowToolbar, showSearch, pushDataSearch, login
       })
     }
   })
-
-  if (getUserLocal) {
-
-    login = (
-      <Fragment>
-        <div className="toolbar__item-login">
-          <i className="far fa-user-circle"></i>
-          <span className="toolbar__item-title">{getUserLocal[0].name}</span>
-          {/* log out */}
-          <div className="logout">
-            <div className="logout__item">
-              <i className="far fa-user-circle"></i>
-              <span>{getUserLocal[0].name}</span>
-            </div>
-            <div className="logout__item">
-              <i className="far fa-envelope"></i>
-              <span>{getUserLocal[0].email}</span>
-            </div>
-            <button className="logout__btn" onClick={handleLogout}>Đăng xuất</button>
-          </div>
-        </div>
-      </Fragment>
-    )
-  }
-
-  const handleSearchBtn = () => {
-    pushDataSearch(dataProduct, value)
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  }
 
   useEffect(() => {
     const toolbarEl = document.querySelector('.header__toolbar');
@@ -83,12 +38,19 @@ const Toolbar = ({ dataProduct, isShowToolbar, showSearch, pushDataSearch, login
     }
   }, [])
 
+  const handleSearchBtn = () => {
+    pushDataSearch(dataProduct, value)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
 
   return (isShowToolbar ?
     <div className='header__toolbar' >
       <div className="header__toolbar__logo">
         <Link to="/">
-          <img src={logo} alt="logo" />
+          <img src='https://phongvu.vn/phongvu/logo-full.svg' alt="logo" />
         </Link>
       </div>
       {
@@ -106,7 +68,8 @@ const Toolbar = ({ dataProduct, isShowToolbar, showSearch, pushDataSearch, login
               </button>
             </Link>
           </form>
-        </div> : null
+        </div>
+          : null
       }
       <div className="header__toolbar__item">
         <Link>
@@ -116,14 +79,41 @@ const Toolbar = ({ dataProduct, isShowToolbar, showSearch, pushDataSearch, login
           </div>
         </Link>
 
-        <Link>
+        <Link to="/account">
           <div className="toolbar__item-order">
             <i className="fas fa-clipboard-list"></i>
             <span className="toolbar__item-title">Đơn hàng</span>
           </div>
         </Link>
 
-        {login}
+        {
+          getUserLocal.length !== 0 ?
+            <Fragment>
+              <div className="toolbar__item-login">
+                <i className="far fa-user-circle"></i>
+                <span className="toolbar__item-title">{getUserLocal[0].name}</span>
+                {/* log out */}
+                <div className="logout">
+                  <div className="logout__item">
+                    <i className="far fa-user-circle"></i>
+                    <span>{getUserLocal[0].name}</span>
+                  </div>
+                  <div className="logout__item">
+                    <i className="far fa-envelope"></i>
+                    <span>{getUserLocal[0].email}</span>
+                  </div>
+                  <button className="logout__btn" onClick={handleLogout}>Đăng xuất</button>
+                </div>
+              </div>
+            </Fragment>
+            :
+            <Link to='/login'>
+              <div className="toolbar__item-login">
+                <i className="far fa-user-circle"></i>
+                <span className="toolbar__item-title">Đăng nhập</span>
+              </div>
+            </Link>
+        }
 
         <Link to="/cart">
           <div className="toolbar__item-cart">

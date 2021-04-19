@@ -18,16 +18,13 @@ const CartPayment = ({ cart, listUsers }) => {
     const handleClickPay = () => {
         if (listUsers.length === 0) {
             setShow(true)
-            const handleRightModal = () => {
-                document.location.href = 'http://localhost:3000/phongvu_app#/login'
-            }
             setModal(
                 <ModalBackdrop
                     title="Đăng nhập để mua hàng bạn nhé!"
                     right="Đăng nhập"
                     show={show}
+                    link="/login"
                     handleClose={handleCloseModal}
-                    handleRight={handleRightModal}
                     displayLeft={{ display: 'none' }}
                     displayRight={{ fontSize: '1.6rem' }}
                     displayTitle={{ fontSize: '3rem' }}
@@ -36,19 +33,16 @@ const CartPayment = ({ cart, listUsers }) => {
             )
         } else {
             setShow(true)
-            const handleRightModal = () => {
-                document.location.href = 'http://localhost:3000/phongvu_app#/'
-            }
             setModal(
                 <ModalBackdrop
                     title="Cảm ơn quý khách chúng tôi sẽ liên hệ sớm nhất có thể "
                     left="Tiếp tục mua sắm"
                     right="Quay lại trang chủ"
                     show={show}
+                    link="/"
                     handleClose={handleCloseModal}
-                    handleRight={handleRightModal}
                     displayLeft={{ display: 'none' }}
-                    displayRight={{ fontSize: '1.6rem' }}
+                    displayRight={{ fontSize: '1.6rem', width: 'fit-content' }}
                     displayTitle={{ fontSize: '3rem' }}
                     displayBody={{ fontSize: '1.4rem' }}
                 />

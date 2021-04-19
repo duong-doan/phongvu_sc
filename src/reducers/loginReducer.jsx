@@ -5,29 +5,36 @@ const initState = {
 }
 
 const loginReducer = (state = initState, action) => {
+    localStorage.setItem('users', JSON.stringify([...state.users]))
     switch (action.type) {
         case TypeActions.GG_LOGIN:
-            const listUsers = [...state.users]
-
-            listUsers.push({
-                userId: listUsers.length,
+            const userLocalStr = JSON.parse(localStorage.getItem('users'))
+            const userItemGg = {
                 name: action.name,
-                email: action.email
-            })
+                email: action.email,
+                cartItem: action.cartItem,
+                userId: userLocalStr.length
+            }
+            userLocalStr.push(userItemGg)
 
-            localStorage.setItem('users', JSON.stringify(listUsers))
+            localStorage.setItem('users', JSON.stringify(userLocalStr))
 
             return {
                 ...state,
-                users: listUsers
+                users: userLocalStr
             };
         case TypeActions.REGISTER:
-            const userFormRegister = [...state.users]
-            userFormRegister.push(action.valueFormik)
-            localStorage.setItem('users', JSON.stringify(userFormRegister))
+            const userLocal = JSON.parse(localStorage.getItem('users'))
+            const userItem = {
+                ...action.valueFormik,
+                cartItem: action.cartItem,
+                userId: userLocal.length
+            }
+            userLocal.push(userItem)
+            localStorage.setItem('users', JSON.stringify(userLocal))
             return {
                 ...state,
-                users: userFormRegister
+                users: userLocal
             }
 
         default:

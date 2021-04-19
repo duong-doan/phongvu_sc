@@ -8,7 +8,6 @@ import BannerAdsRight from './Banner/BannerAdsRight/BannerAdsRight';
 import BannerAdsBottom from './Banner/BannerAdsBottom/BannerAdsBottom';
 import SaleProduct from './SaleProduct/SaleProduct';
 import BannerFullWidth from '../../components/BannerFullWidth/BannerFullWidth';
-import ImgBannerFull1 from '../../assets/images/banner-full-width.webp'
 import OutstandBrand from './OutstandBrand/OutstandBrand';
 import BigCardWrapProduct from '../../components/BigCardWrapProduct/BigCardWrapProduct';
 import ProductItemAdsHorizontal from '../../components/ProductItemAds/ProductitemAdsHorizontal/ProductItemAdsHorizontal';

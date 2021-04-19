@@ -15,6 +15,7 @@ import HomePage from './pages/Home/HomePage';
 import Housewear from './pages/Housewear/Housewear';
 import HousewearDetail from './pages/Housewear/HousewearDetail/HousewearDetail';
 import Login from './pages/Login/Login';
+import ManageOrder from './pages/ManageOrder/ManageOrder';
 import ListPhonePage from './pages/PhoneProduct/ListPhonePage/ListPhonePage';
 import PhoneDetail from './pages/PhoneProduct/PhoneDetail/PhoneDetail';
 import PhoneProduct from './pages/PhoneProduct/PhoneProduct';
@@ -57,6 +58,8 @@ const App = ({ onPushData }) => {
 
           <Route path="/housewear" component={Housewear} />
           <Route path="/housewearDetail/:id" exact component={HousewearDetail} />
+
+          <Route path="/account" component={ManageOrder} />
 
           <Route path="/cart" exact component={Cart} />
 

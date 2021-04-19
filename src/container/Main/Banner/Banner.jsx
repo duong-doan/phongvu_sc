@@ -2,11 +2,6 @@ import React from 'react'
 import './Banner.scss'
 
 import Carousel from 'react-bootstrap/Carousel'
-// import banner1 from '../../../assets/images/main__banner-1.webp'
-// import banner2 from '../../../assets/images/main__banner-2.webp'
-// import banner3 from '../../../assets/images/main__banner-3.webp'
-// import banner4 from '../../../assets/images/main__banner-4.webp'
-// import banner5 from '../../../assets/images/main__banner-5.webp'
 
 const Banner = (props) => {
   return (

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import { connect } from 'react-redux';
-import './SaleProductItem.scss'
-
+import { Link } from 'react-router-dom';
 import CardProductBigSize from '../../../../components/CardProduct/CardProductBigSize/CardProductBigSize';
+import './SaleProductItem.scss';
+
 
 const SaleproductItem = React.memo(({ dataSaleProductLaptop }) => {
 
@@ -11,35 +11,23 @@ const SaleproductItem = React.memo(({ dataSaleProductLaptop }) => {
         .filter(laptop => laptop.idCategory === 'lap00')
         .slice(0, 4)
 
-    let productItem =
-        <div style={{ height: '200px' }}>
-            <p className="loader" style={{
-                right: '500px',
-                bottom: '130px',
-            }}></p>
-        </div>
-
-    if (data) {
-        productItem = (
-            data.map(product => {
-                return (
-                    <Link to={`/productDetail/${product.id}`} key={product.id}>
-                        <CardProductBigSize
-                            url={product.image}
-                            urlGift={product.gift}
-                            name={product.name}
-                            price={product.price}
-                            discountPrice={product.discountPrice}
-                        />
-                    </Link>
-                )
-            })
-        )
-    }
-
     return (
         <div className="sale_product-item">
-            {productItem}
+            {
+                data.map(product => {
+                    return (
+                        <Link to={`/productDetail/${product.id}`} key={product.id}>
+                            <CardProductBigSize
+                                url={product.image}
+                                urlGift={product.gift}
+                                name={product.name}
+                                price={product.price}
+                                discountPrice={product.discountPrice}
+                            />
+                        </Link>
+                    )
+                })
+            }
         </div>
     )
 })

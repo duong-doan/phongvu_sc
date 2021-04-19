@@ -6,4 +6,4 @@ export const INCREASE = "INCREASE";
 export const DECREASE = "DECREASE";
 export const VALUE_SEARCH = "VALUE_SEARCH";
 export const GG_LOGIN = "GG_LOGIN";
-export const REGISTER = "REGISTER"
+export const REGISTER = "REGISTER";

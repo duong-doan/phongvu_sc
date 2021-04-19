@@ -11,6 +11,9 @@ const TextField = ({ label, ...props }) => {
             <input
                 className={`form-control shadow-none ${meta.touched && meta.error && 'is-invalid'}`}
                 {...field} {...props}
+                style={{
+                    width: `${props.style}`
+                }}
             />
             <ErrorMessage component="div" name={field.name} className="error" />
         </div>

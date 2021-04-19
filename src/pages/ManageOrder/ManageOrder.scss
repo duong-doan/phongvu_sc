@@ -1,0 +1,33 @@
+.manageOrder__wrap {
+    .manageOrder {
+        width: 90%;
+        margin: auto;
+        display: flex;
+
+        .manage__aside {
+            width: 20%;
+            ul {
+                padding: 0;
+                list-style: none;
+                a {
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    i {
+                        font-size: 2rem;
+                    }
+                    li {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+
+        .manage__list-order {
+            width: 80%;
+        }
+    }
+}
