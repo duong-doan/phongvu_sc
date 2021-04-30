@@ -28,7 +28,7 @@ const Sidebar = () => {
         {
             imgUrl: 'https://lh3.googleusercontent.com/bmh_GK8zYyE-iFFqXFifHBgXqo8e4hZMHoxjims0WbjhsFMCTrKTi--nb7DZ8WBkzXlQZRlYZu6YQyPYpduf=w50-rw',
             title: 'PC - Máy tính đồng bộ',
-            endPoint: 'laptop'
+            endPoint: 'listLaptop'
         },
         {
             imgUrl: 'https://lh3.googleusercontent.com/iRXHBhcy0POD2QZ8HdjIsEhi_PyXoTkDja7HNcASAffs8SFIDCpibFnhDOYLSOtLEFMFrUMTl6LAG9bTBjLX=w50-rw',

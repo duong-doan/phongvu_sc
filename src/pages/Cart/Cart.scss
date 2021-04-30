@@ -63,6 +63,11 @@
 
             .cartPage__productItem {
                 justify-content: flex-start;
+                padding: 8px;
+                width: 100%;
+                img {
+                    width: 20%;
+                }
                 h6 {
                     width: 25%;
                     margin-right: 10px;
@@ -70,6 +75,9 @@
                 .productItem__interactive {
                     width: 30%;
                     margin-right: 10px;
+                }
+                h5 {
+                    width: 30%;
                 }
             }
         }

@@ -42,12 +42,12 @@
             flex-wrap: wrap;
 
             .wrap--img {
-                overflow: hidden;
                 border-radius: 10px;
-                width: 49%;
+                width: 48%;
                 margin: 6px;
 
                 img {
+                    width: 100%;
                     &:hover {
                         transition: all 0.2s;
                         transform: scale(1.05);
@@ -70,7 +70,9 @@
     .phoneProduct__wrap--new {
         .wrap--new--half {
             .wrap--img {
-                width: 48% !important;
+                margin: 0 auto !important;
+                width: 48%;
+                justify-content: space-around;
                 img {
                     width: 100%;
                 }
