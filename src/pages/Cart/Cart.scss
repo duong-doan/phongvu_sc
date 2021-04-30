@@ -51,3 +51,30 @@
         }
     }
 }
+
+@media (min-width: 374px) and (max-width: 800px) {
+    .cartPage__wrap__main {
+        flex-direction: column;
+        .wrap__main__allProduct {
+            width: 100% !important;
+            height: 300px !important;
+            overflow: scroll;
+            margin-bottom: 20px;
+
+            .cartPage__productItem {
+                justify-content: flex-start;
+                h6 {
+                    width: 25%;
+                    margin-right: 10px;
+                }
+                .productItem__interactive {
+                    width: 30%;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .cartPay {
+            width: 100%;
+        }
+    }
+}

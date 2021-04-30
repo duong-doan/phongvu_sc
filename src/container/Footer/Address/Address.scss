@@ -44,3 +44,19 @@
         }
     }
 }
+
+@media (min-width: 374px) and (max-width: 800px) {
+    .footer__address-wrap {
+        .footer__address {
+            width: 90%;
+            flex-direction: column;
+            .footer__address-name,
+            .footer__address-location {
+                width: 100%;
+            }
+            .footer__address-location {
+                padding: 0;
+            }
+        }
+    }
+}

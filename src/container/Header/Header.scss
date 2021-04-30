@@ -4,3 +4,9 @@
     width: 100%;
     position: relative;
 }
+
+@media (min-width: 374px) and (max-width: 700px) {
+    .header__banner {
+        display: none;
+    }
+}

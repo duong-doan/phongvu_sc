@@ -11,3 +11,9 @@
         border-radius: 10px;
     }
 }
+
+@media (min-width: 374px) and (max-width: 800px) {
+    .main__sale_product {
+        display: none;
+    }
+}

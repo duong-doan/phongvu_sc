@@ -29,7 +29,7 @@ const Main = (props) => {
             </Banner>
 
             {/* Add space */}
-            <div style={{ width: '100%', height: '100px' }}></div>
+            <div className="add-space" style={{ width: '100%', height: '100px' }}></div>
 
             {/* Section product sale hot */}
             <SaleProduct />

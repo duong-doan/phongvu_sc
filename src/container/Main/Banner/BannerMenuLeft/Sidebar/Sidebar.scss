@@ -12,23 +12,50 @@
     box-shadow: 1px 1px 6px rgba($color: #000000, $alpha: 0.2), -1px -1px 6px rgba($color: #000000, $alpha: 0.2);
 
     ul {
-        li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 6px;
-            overflow: hidden;
-
-            img {
-                margin-right: 0.8rem;
+        a {
+            width: 100%;
+            &:hover {
+                text-decoration: none;
             }
 
-            span {
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
-                font-size: 1.2rem;
-                font-weight: 500;
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 6px;
+                overflow: hidden;
+                color: #666;
+
+                img {
+                    margin-right: 0.8rem;
+                }
+
+                span {
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+
+                &:hover {
+                    background-color: rgb(226, 224, 224);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 374px) and (max-width: 800px) {
+    .main__sidebar {
+        width: 90%;
+        ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                width: 45%;
+                margin: 0 0.6rem;
             }
         }
     }

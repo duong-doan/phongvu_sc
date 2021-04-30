@@ -12,3 +12,9 @@
         margin-bottom: 20px;
     }
 }
+
+@media (min-width: 374px) and (max-width: 800px) {
+    .product__item-wrapAds {
+        display: none;
+    }
+}

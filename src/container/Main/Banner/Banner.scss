@@ -31,3 +31,12 @@
         border-bottom-left-radius: 20px;
     }
 }
+
+@media (min-width: 374px) and (max-width: 800px) {
+    .carousel {
+        display: none;
+    }
+    .main__banner {
+        height: 270px;
+    }
+}

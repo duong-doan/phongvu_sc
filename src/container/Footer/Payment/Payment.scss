@@ -33,8 +33,22 @@
     }
 
     .footer__payment-listPayment {
+        img {
+            width: 100%;
+        }
         h4 {
             margin: 16px 0;
+        }
+    }
+}
+
+@media (min-width: 374px) and (max-width: 800px) {
+    .footer__payment {
+        flex-direction: column;
+        .footer__payment-listPayment {
+            img {
+                width: 100%;
+            }
         }
     }
 }

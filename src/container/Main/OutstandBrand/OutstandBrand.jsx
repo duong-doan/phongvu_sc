@@ -26,7 +26,7 @@ const OutstandBrand = () => {
                     <ProductItemAdsHorizontal
                         url="https://lh3.googleusercontent.com/l2y1xkUV5p_aRjxyiqIQ9yyvj9vqukSKf2A2l3vd3tcnU9FefzFCScndOuyWil3w98rG618FEsz-t-moEYeI=rw"
                         name="LG"
-                        desc="Tháng LG quà mê ly" />
+                        desc="Tháng LG nhận quà mê ly" />
                 </Link>
                 <Link to="/listLaptop">
                     <ProductItemAdsHorizontal

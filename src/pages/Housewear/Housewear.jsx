@@ -9,28 +9,6 @@ import './Housewear.scss';
 const Housewear = (props) => {
     const dataHousewear = props.dataHousewear.filter(product => product.idCategory === 'house02')
 
-    let productHousewear = <div style={{ height: '200px', width: '90%', margin: 'auto' }}>
-        <p className="loader"></p>
-    </div>
-
-    if (dataHousewear) {
-        productHousewear = (
-            dataHousewear.map(product => {
-                return (
-                    <Link to={`/housewearDetail/${product.id}`} key={product.id}>
-                        <CartProductBigSize
-                            url={product.image}
-                            urlGift={product.gift}
-                            name={product.name}
-                            price={product.price}
-                            discountPrice={product.discountPrice}
-                        />
-                    </Link>
-                )
-            })
-        )
-    }
-
     return (
         <Fragment>
             <Toolbar isShowToolbar />
@@ -44,7 +22,21 @@ const Housewear = (props) => {
                         <img src="https://storage.googleapis.com/teko-gae.appspot.com/media/image/2021/3/24/20210324_99702896-d43b-4263-bd5d-937e50d0999b.png" alt="" />
                     </div>
                     <ContainerProduct title="Sản phẩm dành cho bạn">
-                        {productHousewear}
+                        {
+                            dataHousewear.map(product => {
+                                return (
+                                    <Link to={`/housewearDetail/${product.id}`} key={product.id}>
+                                        <CartProductBigSize
+                                            url={product.image}
+                                            urlGift={product.gift}
+                                            name={product.name}
+                                            price={product.price}
+                                            discountPrice={product.discountPrice}
+                                        />
+                                    </Link>
+                                )
+                            })
+                        }
                     </ContainerProduct>
                 </div>
             </div>

@@ -29,9 +29,29 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        a {
+            width: 25%;
+            margin: 0 5px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
+}
 
-    a:hover {
-        text-decoration: none;
+@media (min-width: 374px) and (max-width: 800px) {
+    .main__outstand_brand {
+        height: fit-content;
+        h4::after {
+            top: 3%;
+        }
+
+        .main__outstand_brand-list {
+            flex-wrap: wrap;
+            align-items: center;
+            a {
+                width: 45%;
+            }
+        }
     }
 }

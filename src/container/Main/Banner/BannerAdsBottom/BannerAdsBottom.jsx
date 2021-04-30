@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 const BannerAdsBottom = () => {
     return (
         <div className="product__item-wrapAdsHorizontal">
-            <Link to="/phoneProduct">
+            <Link to="/listLaptop">
                 <ProductItemAdsHorizontal url={'https://lh3.googleusercontent.com/kILb8yDPjsbdEtL3Df1C6xZuxsY7mzRlF3lhpwYUykdDBFo5OkfZBvTF9eqFBBECH4KA74LupOploWYtGmoYT4pOmU_Zoe6p=w308-rw'} />
             </Link>
-            <Link to="/listLaptop">
+            <Link to="/phoneProduct">
                 <ProductItemAdsHorizontal url={'https://lh3.googleusercontent.com/IO9LdiZLI-5Iq6zlWBKJuAGGYlp6PkfxGcvfoWBZJmK0xZDC_1KyGjxy9p-aafU3pSUe6haPb7PFUcA6enRnjXj_oa2k0xwC=w308-rw'} />
             </Link>
             <Link to="/productSaleLaptops">

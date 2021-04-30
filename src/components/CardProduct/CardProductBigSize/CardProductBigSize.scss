@@ -1,8 +1,6 @@
 @import "../../../assets/variable/variable";
 
 .card_product_big_size {
-    width: 234px;
-    min-height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -24,8 +22,7 @@
         }
 
         .card_product_big_size-img {
-            width: 200px;
-            height: 200px;
+            width: 100%;
         }
 
         .card_big_size-name {

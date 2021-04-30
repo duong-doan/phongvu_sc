@@ -45,3 +45,20 @@
         }
     }
 }
+
+@media (min-width: 374px) and (max-width: 800px) {
+    .footer__list {
+        width: 90%;
+        flex-wrap: wrap;
+        ul {
+            width: 50%;
+            h4 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}

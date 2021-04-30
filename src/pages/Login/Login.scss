@@ -52,3 +52,14 @@
 .btn-success {
     font-size: 1.4rem;
 }
+
+@media (min-width: 374px) and (max-width: 800px) {
+    #logreg-forms {
+        margin: 0;
+        width: 100%;
+        form {
+            width: 90%;
+            margin: auto;
+        }
+    }
+}
