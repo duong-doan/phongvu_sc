@@ -1,15 +1,25 @@
 import * as TypeActions from '../constant/TypeActions';
 
 const initState = {
-    dataProduct: []
+    dataProduct: [],
+    dataFirst: []
 }
 
 const searchReducer = (state = initState, action) => {
     switch (action.type) {
         case TypeActions.PUSH_DATA_SEARCH:
+            const dataSearch = [...action.data]
+            const filterArr = dataSearch.filter(product => {
+                if (product.name.toLowerCase().includes(action.valueInput)) {
+                    return product
+                }
+            })
+            console.log(filterArr);
+
             return {
                 ...state,
-                dataProduct: action.data
+                dataProduct: action.data,
+                dataFirst: filterArr
             };
 
         case TypeActions.VALUE_SEARCH:

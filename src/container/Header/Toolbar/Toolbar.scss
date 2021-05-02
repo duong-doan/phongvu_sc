@@ -49,7 +49,7 @@
                 color: $text-sub-color;
             }
 
-            a {
+            .toolbar__search-wrap {
                 position: absolute;
                 top: 2px;
                 right: 2px;
@@ -58,17 +58,14 @@
                 height: 90%;
                 border-radius: 8px;
                 background-color: $primary-color;
-                .toolbar__search-wrap {
-                    background-color: transparent;
-                    border: none;
-                    i {
-                        position: absolute;
-                        top: 50%;
-                        right: 18%;
-                        transform: translate(-18%, -50%);
-                        font-size: 1.6rem;
-                        color: rgb(255, 255, 255);
-                    }
+                border: none;
+                i {
+                    position: absolute;
+                    top: 50%;
+                    right: 18%;
+                    transform: translate(-18%, -50%);
+                    font-size: 1.6rem;
+                    color: rgb(255, 255, 255);
                 }
             }
         }
@@ -205,6 +202,7 @@
         padding: 10px;
         .header__toolbar__logo {
             width: 50%;
+            height: 20px;
 
             .sticky-menu__listProduct {
                 display: none;

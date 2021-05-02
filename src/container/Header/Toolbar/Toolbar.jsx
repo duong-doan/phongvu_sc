@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import * as TypeActions from '../../../constant/TypeActions';
 import './Toolbar.scss';
 
@@ -8,6 +8,8 @@ const Toolbar = ({ dataProduct, isShowToolbar, showSearch, pushDataSearch }) => 
   const [value, setValue] = useState('')
 
   const getUserLocal = JSON.parse(localStorage.getItem('users'))
+
+  const history = useHistory()
 
   const handleLogout = () => {
     document.location.reload()
@@ -38,91 +40,88 @@ const Toolbar = ({ dataProduct, isShowToolbar, showSearch, pushDataSearch }) => 
     }
   }, [])
 
-  const handleSearchBtn = () => {
-    pushDataSearch(dataProduct, value)
-  }
-
   const handleSubmit = (e) => {
     e.preventDefault();
+    pushDataSearch(dataProduct, value)
+    history.push('/search')
   }
 
-  return (isShowToolbar ?
-    <div className='header__toolbar' >
-      <div className="header__toolbar__logo">
-        <Link to="/">
-          <img src='https://phongvu.vn/phongvu/logo-full.svg' alt="logo" />
-        </Link>
-      </div>
-      {
-        showSearch ? <div className="header__toolbar__search">
-          <form onSubmit={handleSubmit}>
-            <input
-              value={value}
-              onChange={(e) => setValue(e.target.value)}
-              type="text"
-              placeholder="Nhập từ kháo cần tìm"
-            />
-            <Link to="/search">
-              <button className="toolbar__search-wrap" onClick={handleSearchBtn}>
+  return (
+    isShowToolbar ?
+      <div className='header__toolbar' >
+        <div className="header__toolbar__logo">
+          <Link to="/">
+            <img src='https://phongvu.vn/phongvu/logo-full.svg' alt="logo" />
+          </Link>
+        </div>
+        {
+          showSearch ? <div className="header__toolbar__search">
+            <form onSubmit={handleSubmit}>
+              <input
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+                type="text"
+                placeholder="Nhập từ kháo cần tìm"
+              />
+              <button className="toolbar__search-wrap" type="submit">
                 <i className="fas fa-search"></i>
               </button>
-            </Link>
-          </form>
-        </div>
-          : null
-      }
-      <div className="header__toolbar__item">
-        <Link>
-          <div className="toolbar__item-voucher">
-            <i className="fas fa-tag"></i>
-            <span className="toolbar__item-title">Khuyến mãi</span>
+            </form>
           </div>
-        </Link>
-
-        <Link to="/account">
-          <div className="toolbar__item-order">
-            <i className="fas fa-clipboard-list"></i>
-            <span className="toolbar__item-title">Đơn hàng</span>
-          </div>
-        </Link>
-
-        {
-          getUserLocal.length !== 0 ?
-            <Fragment>
-              <div className="toolbar__item-login">
-                <i className="far fa-user-circle"></i>
-                <span className="toolbar__item-title">{getUserLocal[0].name}</span>
-                {/* log out */}
-                <div className="logout">
-                  <div className="logout__item">
-                    <i className="far fa-user-circle"></i>
-                    <span>{getUserLocal[0].name}</span>
-                  </div>
-                  <div className="logout__item">
-                    <i className="far fa-envelope"></i>
-                    <span>{getUserLocal[0].email}</span>
-                  </div>
-                  <button className="logout__btn" onClick={handleLogout}>Đăng xuất</button>
-                </div>
-              </div>
-            </Fragment>
-            :
-            <Link to='/login'>
-              <div className="toolbar__item-login">
-                <i className="far fa-user-circle"></i>
-                <span className="toolbar__item-title">Đăng nhập</span>
-              </div>
-            </Link>
+            : null
         }
+        <div className="header__toolbar__item">
+          <Link>
+            <div className="toolbar__item-voucher">
+              <i className="fas fa-tag"></i>
+              <span className="toolbar__item-title">Khuyến mãi</span>
+            </div>
+          </Link>
 
-        <Link to="/cart">
-          <div className="toolbar__item-cart">
-            <i className="fas fa-shopping-cart"></i>
-            <span className="toolbar__item-title">Giỏ hàng</span>
-          </div>
-        </Link>
-      </div>
-    </div> : null
+          <Link to="/account">
+            <div className="toolbar__item-order">
+              <i className="fas fa-clipboard-list"></i>
+              <span className="toolbar__item-title">Đơn hàng</span>
+            </div>
+          </Link>
+
+          {
+            getUserLocal.length !== 0 ?
+              <Fragment>
+                <div className="toolbar__item-login">
+                  <i className="far fa-user-circle"></i>
+                  <span className="toolbar__item-title">{getUserLocal[0].name}</span>
+                  {/* log out */}
+                  <div className="logout">
+                    <div className="logout__item">
+                      <i className="far fa-user-circle"></i>
+                      <span>{getUserLocal[0].name}</span>
+                    </div>
+                    <div className="logout__item">
+                      <i className="far fa-envelope"></i>
+                      <span>{getUserLocal[0].email}</span>
+                    </div>
+                    <button className="logout__btn" onClick={handleLogout}>Đăng xuất</button>
+                  </div>
+                </div>
+              </Fragment>
+              :
+              <Link to='/login'>
+                <div className="toolbar__item-login">
+                  <i className="far fa-user-circle"></i>
+                  <span className="toolbar__item-title">Đăng nhập</span>
+                </div>
+              </Link>
+          }
+
+          <Link to="/cart">
+            <div className="toolbar__item-cart">
+              <i className="fas fa-shopping-cart"></i>
+              <span className="toolbar__item-title">Giỏ hàng</span>
+            </div>
+          </Link>
+        </div>
+      </div> : null
   );
 }
 

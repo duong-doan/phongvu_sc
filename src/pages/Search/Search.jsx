@@ -7,7 +7,8 @@ import CartProductBigSize from '../../components/CardProduct/CardProductBigSize/
 import Toolbar from '../../container/Header/Toolbar/Toolbar'
 import { Link } from 'react-router-dom';
 
-const Search = ({ dataSearch, onValueSearch, dataFilter }) => {
+const Search = ({ dataFirst, onValueSearch, dataFilter }) => {
+  console.log(dataFirst);
   const [valueSearch, setValueSearch] = useState({
     brand: '',
     price: '',
@@ -17,7 +18,7 @@ const Search = ({ dataSearch, onValueSearch, dataFilter }) => {
   let [data, setData] = useState([])
 
   useEffect(() => {
-    setData(dataSearch)
+    setData(dataFirst)
     if (dataFilter) {
       setData(dataFilter)
     }
@@ -145,7 +146,7 @@ const Search = ({ dataSearch, onValueSearch, dataFilter }) => {
 
 const mapStateToProps = state => {
   return {
-    dataSearch: state.SearchReducer.dataProduct,
+    dataFirst: state.SearchReducer.dataFirst,
     dataFilter: state.SearchReducer.dataFilter
   }
 }
